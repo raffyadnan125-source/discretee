@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.B_zN8nKT.js","assets":"assets.8Gk803W0.js","comments":"comments.hEoja5zd.js","db":"db.DoKNwgX8.js","downloads":"downloads.th1YuAIk.js","embed":"embed.eqL6deQM.js","endpoints":"endpoints.CooJFPzL.js","mcp":"mcp.Ch3NPscy.js","network":"network.B5UA9Su4.js","permissions":"permissions.BNySkLV5.js","room":"room.Dc3WDo3b.js","sample":"sample.C2869FGz.js","self":"artifact.B_zN8nKT.js","user":"user.BpKav-Rf.js"},"transforms":"_transforms.Cil6ankx.js","comments":"_comments.e5-ml_Nr.js","translate":"_translate.5HCW4BJh.js","ldx":"_ldx.DycbNc-Q.js"}</script><script>(function(){"use strict";var fe=["light","dark","system"],de=/^[A-Za-z0-9_-]{1,64}$/,te=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,pe=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function me(e){const t=e.toLowerCase();return t.startsWith("data-")||t.startsWith("aria-")||pe.has(t)}var $e="http://www.w3.org/1999/xhtml",he="http://www.w3.org/2000/svg",_e=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),ve=new Set(["script","style"]);function ye(e){const t=e.localName.toLowerCase();return e.namespaceURI==="http://www.w3.org/1999/xhtml"?!_e.has(t):e.namespaceURI===he?!ve.has(t):!1}function x(e,t){return e===t||(e===160||e===32)&&(t===160||t===32)}function we(e,t){const r=e.length,n=t.length;let a=0;for(;a<r&&a<n&&x(e.charCodeAt(a),t.charCodeAt(a));)a++;let o=0;for(;o<r-a&&o<n-a&&x(e.charCodeAt(r-1-o),t.charCodeAt(n-1-o));)o++;return{p:a,s:o}}function Ee(e,t){const r=e.firstChild;if(e.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){e.textContent=t;return}const n=r.data,a=n.length,o=t.length,{p:c,s:i}=we(n,t);c===a&&i===0&&a===o||r.replaceData(c,a-c-i,t.slice(c,o-i));const m=r.data,f=e.ownerDocument.getSelection?.()??null,y=f!==null&&f.rangeCount>0&&(f.anchorNode===r||f.focusNode===r)?{anchor:f.anchorNode,anchorOffset:f.anchorOffset,focus:f.focusNode,focusOffset:f.focusOffset}:null;let d=-1,E=-1;for(let v=0;v<m.length&&v<t.length;v++){const A=m.charCodeAt(v),k=t.charCodeAt(v);A!==k&&x(A,k)&&(d<0&&(d=v),E=v)}const b=d>=0;if(b&&r.replaceData(d,E-d+1,t.slice(d,E+1)),b&&y!==null&&y.anchor!==null&&y.focus!==null)try{f.setBaseAndExtent(y.anchor,y.anchorOffset,y.focus,y.focusOffset)}catch{}}var be=new Set(["html","head","body","frameset"]);function ge(e){return e.namespaceURI==="http://www.w3.org/1999/xhtml"&&be.has(e.localName)}function Ae(e){if(e===null||typeof e!="object")return!1;const t=e;if(typeof t.target!="string"||!de.test(t.target)||t.text!==void 0&&typeof t.text!="string")return!1;if(t.attrsSet!==void 0){if(t.attrsSet===null||typeof t.attrsSet!="object")return!1;for(const[r,n]of Object.entries(t.attrsSet))if(!te.test(r)||typeof n!="string")return!1}if(t.attrsRemoved!==void 0){if(!Array.isArray(t.attrsRemoved))return!1;for(const r of t.attrsRemoved)if(typeof r!="string"||!te.test(r))return!1}return!0}function Le(e,t){if(e===null||typeof e!="object")return!1;const{seq:r,elements:n}=e;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!t(n[a]))return!1;return!0}function Te(e){return e===null||typeof e!="object"?!1:Le(e.__frame_patch,Ae)}function Se(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function Re(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function ke(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const r=t.theme;return typeof r=="string"&&fe.includes(r)}var O=/^[\w.-]+\.js$/;function Pe(e,t,r){return r?"inert":typeof t=="string"&&O.test(t)?e?[t]:"inert":e?"inert":"framed"}var Ye="frame_ldx_runtime",Oe="frame_ldx_build",Ge="script#an-form";function Ce(){return{post(e,t){parent.postMessage(e,t)},on(e){const t=r=>{r.source===parent&&e(r.data,r.origin,r.isTrusted)};return addEventListener("message",t),()=>removeEventListener("message",t)}}}function Me(){return{post:()=>{},on:()=>()=>{}}}var F="__frame_scroll",je=150,Ne=310,De=160,Be=3e4;function Ie(){let e=0,t=!1,r=!1,n=!1,a=0,o=null;const c=u=>{try{sessionStorage.setItem(F,JSON.stringify({y:u}))}catch{}},i=()=>{if(clearTimeout(e),o===null)return;const u=o;o=null,c(u)},m=()=>{if(t){t=!1;return}r=!0,o=scrollY,clearTimeout(e),e=setTimeout(i,je)};try{addEventListener("scroll",m,{passive:!0}),addEventListener("pagehide",i)}catch{}const f=()=>{let u;try{u=sessionStorage.getItem(F)}catch{return null}if(u===null)return null;let g;try{g=JSON.parse(u)}catch{g=null}const w=g?.y;if(!(typeof w=="number"&&Number.isFinite(w)&&w>=0)){try{sessionStorage.removeItem(F)}catch{}return null}return w};let y=!1;const d=u=>{try{const g=scrollY;scrollTo({top:u,left:0,behavior:"instant"}),a=u,n=!0,clearTimeout(e),o=null,c(u);const w=scrollY;w!==g&&(t=!0),w!==u&&!y&&(y=!0,addEventListener("load",()=>{try{if(scrollY===w){const M=f();d(M!==null?M:a)}}catch{}},{once:!0}))}catch{}},E=()=>{try{return!!location.hash}catch{return!0}};let b=!1;const v=()=>{try{if(b||innerWidth>Ne||innerHeight>De)return;b=!0;const u=Date.now(),g=()=>{try{removeEventListener("resize",g)}catch{}if(Date.now()-u>Be||r||E())return;const w=f();d(w!==null?w:a)};addEventListener("resize",g)}catch{}};let A=!1,k=!1;return{restore(){if(A||(A=!0,E()))return;const u=f();u!==null&&(d(u),v())},promoted(){if(k||(k=!0,E()))return;const u=f();u!==null?(d(u),v()):n&&d(a)}}}function Ue(e,t,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:m=>m})??null}catch{}const o=window.Worker,c=o?.prototype,i=Object.freeze({Worker:o,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,policy:a,origins:t});r(e).then(m=>m?.bootTopLevel?m.bootTopLevel(i,n):n.settle()).catch(()=>n.settle())}var Ve="modulepreload",Ze=function(e){return"/"+e},Je={},xe=function(t,r,n){let a=Promise.resolve();function o(c){const i=new Event("vite:preloadError",{cancelable:!0});if(i.payload=c,window.dispatchEvent(i),!i.defaultPrevented)throw c}return a.then(c=>{for(const i of c||[])i.status==="rejected"&&o(i.reason);return t().catch(o)})},Fe=window===top,re=Object.getOwnPropertyDescriptor(window,"claude"),j=Pe(Fe,window.__FRAME_PREAMBLE?.topLevel,re?.writable===!1),H=typeof j=="object"&&j[0],_=H?Me():Ce();(function(){const e=Object.defineProperty,t=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const o=r[a];try{e(t,o,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[o]}catch{}try{e(t,o,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[o]=="function"&&n++}if(n&&j==="framed")try{_.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var He=1e4,ze=2e3,We=2e3,ne=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function oe(e){for(const t of ne)if(t.endsWith(":*"))try{const r=new URL(e);if(`${r.protocol}//${r.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}var N=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),z=window.__FRAME_PREAMBLE?.transforms,W=window.__FRAME_PREAMBLE?.comments,q=window.__FRAME_PREAMBLE?.translate,K=window.__FRAME_PREAMBLE?.ldx;function C(e){return xe(()=>import("/_runtime/"+e),void 0)}function se(e,t){return{contract:e.contract,changes:new Set(e.changes??[]),flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:new Map,shellOrigin:t,mount:Y,hooks:B,pipe:()=>({wrap:(r,n)=>(...a)=>{try{return n(...a)}catch(o){return Promise.reject(o)}}})}}var D=null,S=null;function ae(e,t,r){try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var X=!1,B={editBefore:null,edit:null};function qe(e,t,r=!1){const n=[];let a;if(r)try{B.editBefore?.(e)}catch{}for(const o of e.elements){const c=document.querySelector(`[data-id="${o.target}"]`);if(!c){a=o.target;break}if([...Object.keys(o.attrsSet??{}),...o.attrsRemoved??[]].some(i=>!me(i))){a=o.target;break}if(o.text!==void 0&&(!ye(c)||ge(c))){a=o.target;break}for(const[i,m]of Object.entries(o.attrsSet??{}))if(!ce(c,i)){try{c.setAttribute(i,m)}catch{}ie(c,i,m)}for(const i of o.attrsRemoved??[])ce(c,i)||(c.removeAttribute(i),ie(c,i,null));typeof o.text=="string"&&Ee(c,o.text),n.push(o.target)}if(r)try{B.edit?.(e.seq,n,a)}catch{}if(a!==void 0){_.post({__frame_patch_miss:{seq:e.seq}},t);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:e.seq,targets:n}}))}catch{}}function ie(e,t,r){if(!(e instanceof HTMLInputElement))return;const n=t.toLowerCase();n==="checked"?e.checked=r!==null:n==="value"&&e.type!=="file"&&(e.value=r??"")}function ce(e,t){const r=t.toLowerCase(),n=e;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${e.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function le(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,X=!0):X&&(delete t.dataset.theme,t.style.colorScheme="",X=!1)}var I=new Map;function Ke(){let e;const t={u:new Promise(r=>{e=r}),r:r=>{t.done=!0,e(r)},done:!1,nulled:!1};return t}function $(){for(const e of I.values())e.done||(e.nulled=!0,e.r(null))}var Xe=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),Y=(e,t)=>{const r=I.get(e);if(!r||r.done){r?.nulled&&S&&_.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:e}},S);return}const n=typeof t=="function"?Object.setPrototypeOf(t,Xe):Object.assign(Object.create(null),t);typeof n.then=="function"&&delete n.then,r.r(Object.freeze(n))};function ue(){const e=re?.value??{};ae(window,"claude",e);for(const t of Object.keys(N)){if(e[t]!==void 0){ae(e,t,e[t]);continue}I.set(t,Ke())}if(e.use===void 0){const t=r=>{if(typeof r!="string"||!Object.hasOwn(N,r))return Promise.resolve(null);const n=I.get(r);return n?n.u:Promise.resolve(e[r]??null)};try{Object.defineProperty(e,"use",{value:t,writable:!0,configurable:!0,enumerable:!1})}catch{}}}if(j==="framed"){const e=z&&O.test(z)?C(z).catch(()=>{}):Promise.resolve(void 0),t=s=>{if(s.type==="auxclick"&&s.button!==1)return;const h=s.target,p=h&&h.closest?h.closest("a[href],area[href]"):null;if(!p)return;const P=p.getAttribute("href");if(!P)return;let L;try{L=new URL(P,document.baseURI)}catch{return}if((L.protocol==="http:"||L.protocol==="https:")&&L.origin!==location.origin){s.preventDefault();const R=(p.getAttribute("target")??"").toLowerCase(),T=s.type==="auxclick"||s.metaKey||s.ctrlKey||s.shiftKey||s.altKey||!["","_self","_top","_parent"].includes(R);_.post({__frame_nav:!0,url:L.href,newTab:T},"*")}};addEventListener("click",t,!0),addEventListener("auxclick",t,!0);const r={},n=s=>{s.isTrusted&&(r.pointer=!0)},a=s=>{s.isTrusted&&(r.click=!0)};addEventListener("pointermove",n,{capture:!0,passive:!0}),addEventListener("click",a,{capture:!0,passive:!0});const o={cb:null};addEventListener("keydown",s=>o.cb?.(s),!0),e.then(s=>s?.installEscapeForward?.(o,h=>{S&&_.post(h,S)})),e.then(s=>{s?.wireNav&&(s.wireNav(),removeEventListener("click",t,!0),removeEventListener("auxclick",t,!0),removeEventListener("pointermove",n,!0),removeEventListener("click",a,!0),s.wireEngagement?.(r))});let c=null;try{c=Ie()}catch{}ue();let i=null,m=null,f=0;const y=_.on((s,h)=>{oe(h)&&Se(s)&&(i=s.__frame_init,S=h,y(),clearTimeout(f),m?.())});_.post({__frame_connect:!0},"*");const d=setTimeout,E=clearTimeout;let b=0;const v=()=>{try{_.post({__frame_alive:!0},"*")}catch{}b=d(v,ze)},A=()=>E(b);v(),addEventListener("load",A,{once:!0});const k=new Promise(s=>{m=s,f=setTimeout(()=>{y(),s()},He)}),u=document.readyState==="loading"?new Promise(s=>document.addEventListener("DOMContentLoaded",()=>s(),{once:!0})):Promise.resolve(),g=new WeakSet;addEventListener("error",s=>{s.target&&g.add(s.target)},!0);const w=()=>{let s=[];try{s=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(p=>!p.sheet&&!p.disabled&&!g.has(p)&&p.getAttribute("href")&&URL.canParse(p.href)&&(!p.media||matchMedia(p.media).matches))}catch{}let h=s.length;return h===0?Promise.resolve():new Promise(p=>{try{const P=d(p,We),L=()=>{--h===0&&(E(P),p())};for(const R of s)R.addEventListener("load",L,{once:!0}),R.addEventListener("error",L,{once:!0})}catch{p()}})};u.then(()=>{try{c?.restore()}catch{}});const M={cb:null};_.on((s,h)=>{if(oe(h)&&Re(s)){try{c?.promoted()}catch{}M.cb?.()}}),k.then(async()=>{if(!i||!S){$();return}le(i.theme);const s=S;let h=!1,p=!1;_.on((l,Z,U)=>{if(Z!==s)return;ke(l)&&le(l.__frame_theme.theme),Te(l)&&qe(l.__frame_patch,s,U);const J=l?.__fc_mode;J&&typeof J=="object"&&!h&&W&&O.test(W)&&(h=!0,C(W).then(ee=>ee.install?.(s,J.on===!0)).catch(()=>{}));const Q=l?.__ft_cmd;Q&&typeof Q=="object"&&!p&&q&&O.test(q)&&(p=!0,C(q).then(ee=>ee.install?.(s,Q)).catch(()=>{}))});const P=Object.keys(i.capabilities??{}).filter(l=>Object.hasOwn(N,l)).map(l=>[l,N[l]]).filter(l=>typeof l[1]=="string"&&O.test(l[1])),L=await Promise.allSettled(P.map(([,l])=>C(l))),R=await e,T=S;if(R?.buildBoot||_.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},T),R?.buildBoot)try{D=R.buildBoot(i,R.TRANSFORMS??{},{shellOrigin:T,mount:Y,hooks:B},l=>_.post({__frame_cap_telemetry:l},T))}catch{_.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},T),D=se(i,T)}else D=se(i,T);const G=l=>_.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:l}},T),V=D;L.forEach((l,Z)=>{const U=P[Z][0];if(l.status!=="fulfilled"){G(U);return}try{l.value?.install?.(V)}catch{G(U)}}),$(),await u,await w(),A(),_.post({__frame_ready:!0},S),e.then(l=>l?.installSizeReporter?.(T,M)),V.flags.has("frame_ldx_runtime")&&K&&O.test(K)&&document.querySelector("script#an-form")&&C(K).then(l=>l?.boot?.({shellOrigin:s,build:V.flags.has(Oe)})).catch(()=>!1).then(l=>{l!==!0&&G("_ldx")})})}else H&&(ue(),Ue(H,ne,C,{settle:$,mount:Y}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Logika Pernyataan Majemuk</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600;700&display=swap');
+
+:root{
+  --ground:#F1F3F7;
+  --surface:#FFFFFF;
+  --sunken:#E7EBF3;
+  --ink:#161B26;
+  --ink-soft:#525C74;
+  --ink-faint:#8A93A8;
+  --rule:#D3DAE6;
+  --rule-soft:#E4E9F1;
+  --accent:#4437A6;
+  --accent-ink:#FFFFFF;
+  --accent-wash:#ECEAFA;
+  --true:#0C6E5B;
+  --true-wash:#DCEFE9;
+  --false:#A8341F;
+  --false-wash:#F7E2DC;
+  --note:#8A5A05;
+  --note-wash:#F8EEDA;
+  --shadow:0 1px 2px rgba(22,27,38,.05), 0 8px 24px -14px rgba(22,27,38,.28);
+  --serif:'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+  --sans:'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono:'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1219;
+    --surface:#171B25;
+    --sunken:#1E2430;
+    --ink:#E5E9F2;
+    --ink-soft:#9BA5B9;
+    --ink-faint:#6C7689;
+    --rule:#2B3341;
+    --rule-soft:#232A36;
+    --accent:#A99CFF;
+    --accent-ink:#141020;
+    --accent-wash:#241F3E;
+    --true:#54CFAD;
+    --true-wash:#11332A;
+    --false:#F0866A;
+    --false-wash:#3A1D15;
+    --note:#E0B75C;
+    --note-wash:#332912;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1219;
+  --surface:#171B25;
+  --sunken:#1E2430;
+  --ink:#E5E9F2;
+  --ink-soft:#9BA5B9;
+  --ink-faint:#6C7689;
+  --rule:#2B3341;
+  --rule-soft:#232A36;
+  --accent:#A99CFF;
+  --accent-ink:#141020;
+  --accent-wash:#241F3E;
+  --true:#54CFAD;
+  --true-wash:#11332A;
+  --false:#F0866A;
+  --false-wash:#3A1D15;
+  --note:#E0B75C;
+  --note-wash:#332912;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--accent-wash);color:var(--ink)}
+
+/* ---------- shell ---------- */
+.shell{display:grid;grid-template-columns:270px minmax(0,1fr);gap:0;align-items:start}
+.rail{
+  position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;
+  background:var(--surface);border-right:1px solid var(--rule);
+  padding:26px 20px 40px;display:flex;flex-direction:column;gap:22px;
+}
+.brand{display:flex;flex-direction:column;gap:3px}
+.brand .code{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.brand .name{font-family:var(--serif);font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-.01em}
+.brand .sub{font-size:12.5px;color:var(--ink-faint)}
+
+.navsec{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin-bottom:6px}
+nav ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+nav a{
+  display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:baseline;
+  text-decoration:none;color:var(--ink-soft);font-size:14.2px;
+  padding:7px 9px;border-radius:6px;transition:background .13s,color .13s;
+}
+nav a .n{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);font-weight:600}
+nav a:hover{background:var(--sunken);color:var(--ink)}
+nav a.on{background:var(--accent-wash);color:var(--ink);font-weight:600}
+nav a.on .n{color:var(--accent)}
+nav a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+.railfoot{margin-top:auto;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--rule-soft);padding-top:16px}
+.tglbtn{
+  font-family:var(--sans);font-size:12.5px;color:var(--ink-soft);background:transparent;
+  border:1px solid var(--rule);border-radius:6px;padding:6px 10px;cursor:pointer;text-align:left;
+}
+.tglbtn:hover{background:var(--sunken);color:var(--ink)}
+.railfoot .src{font-size:11.5px;color:var(--ink-faint);line-height:1.45}
+
+/* ---------- main ---------- */
+main{padding:0 0 120px}
+.wrap{max-width:760px;margin:0 auto;padding:0 32px}
+
+.masthead{
+  border-bottom:1px solid var(--rule);background:var(--surface);
+  padding:52px 0 40px;margin-bottom:52px;
+}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 14px}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4.6vw,44px);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+.lede{font-size:17.5px;color:var(--ink-soft);margin:0;max-width:60ch}
+.mastmeta{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;
+  border:1px solid var(--rule);border-radius:100px;padding:4px 11px;color:var(--ink-soft);background:var(--ground);
+}
+
+section.module{margin-bottom:64px;scroll-margin-top:20px}
+.modhead{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.modnum{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.08em;padding-top:4px}
+h2{font-family:var(--serif);font-weight:700;font-size:27px;line-height:1.2;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.modintro{color:var(--ink-soft);font-size:15.5px;margin:16px 0 30px;max-width:62ch}
+
+h3{font-family:var(--serif);font-weight:600;font-size:19.5px;line-height:1.3;margin:38px 0 10px;letter-spacing:-.008em;text-wrap:balance}
+h4{font-family:var(--sans);font-weight:600;font-size:14px;margin:26px 0 8px;letter-spacing:.01em}
+p{margin:0 0 14px;max-width:66ch}
+ul,ol{margin:0 0 16px;padding-left:22px;max-width:64ch}
+li{margin-bottom:6px}
+strong{font-weight:600}
+a{color:var(--accent)}
+
+.s{font-family:var(--mono);font-size:.94em;font-weight:500;white-space:nowrap}
+.term{font-style:italic;color:var(--ink-soft)}
+
+/* ---------- boxes ---------- */
+.box{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px 20px;margin:20px 0}
+.box > :last-child{margin-bottom:0}
+.box .boxlabel{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:600;color:var(--ink-faint);margin:0 0 10px;display:block;
+}
+
+.def{border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+.def .boxlabel{color:var(--accent)}
+.ex{background:var(--sunken);border-color:transparent}
+.ex .boxlabel{color:var(--ink-faint)}
+.warn{background:var(--note-wash);border-color:transparent;border-left:3px solid var(--note);border-radius:0 8px 8px 0}
+.warn .boxlabel{color:var(--note)}
+
+.steps{counter-reset:st;list-style:none;padding-left:0;max-width:64ch}
+.steps li{counter-increment:st;display:grid;grid-template-columns:26px 1fr;gap:10px;margin-bottom:12px;align-items:start}
+.steps li::before{
+  content:counter(st);font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);
+  background:var(--accent-wash);border-radius:5px;width:24px;height:22px;display:grid;place-items:center;margin-top:2px;
+}
+
+/* ---------- tables ---------- */
+.scroller{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+table.tt{
+  border-collapse:collapse;font-family:var(--mono);font-size:13.5px;
+  font-variant-numeric:tabular-nums;background:var(--surface);
+  border:1px solid var(--rule);border-radius:8px;overflow:hidden;min-width:min(100%,240px);
+}
+table.tt th{
+  background:var(--sunken);color:var(--ink);font-weight:600;
+  padding:8px 14px;text-align:center;border-bottom:1px solid var(--rule);white-space:nowrap;font-size:13px;
+}
+table.tt td{padding:6px 14px;text-align:center;border-bottom:1px solid var(--rule-soft);white-space:nowrap}
+table.tt tbody tr:last-child td{border-bottom:none}
+table.tt th.sep, table.tt td.sep{border-left:1px solid var(--rule)}
+.v-t{color:var(--true);font-weight:600}
+.v-f{color:var(--false);font-weight:600}
+td.cell-t{background:var(--true-wash)}
+td.cell-f{background:var(--false-wash)}
+tr.crit td{background:var(--accent-wash)}
+tr.crit td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+
+table.plain{border-collapse:collapse;font-size:14.5px;background:var(--surface);border:1px solid var(--rule);border-radius:8px;overflow:hidden;width:100%}
+table.plain th{background:var(--sunken);text-align:left;padding:9px 14px;font-weight:600;font-size:12.5px;letter-spacing:.02em;border-bottom:1px solid var(--rule)}
+table.plain td{padding:9px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+table.plain tbody tr:last-child td{border-bottom:none}
+table.plain td.m{font-family:var(--mono);font-size:13.5px;white-space:nowrap}
+
+/* ---------- lab ---------- */
+.lab{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:20px;margin:26px 0;box-shadow:var(--shadow)}
+.lab h4{margin-top:0}
+.labrow{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.labrow label{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+.labrow input{
+  font-family:var(--mono);font-size:15px;padding:10px 12px;border:1px solid var(--rule);
+  border-radius:7px;background:var(--ground);color:var(--ink);width:100%;
+}
+.labrow input:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+.keys{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
+.keys button{
+  font-family:var(--mono);font-size:14px;min-width:34px;padding:5px 9px;cursor:pointer;
+  border:1px solid var(--rule);border-radius:6px;background:var(--ground);color:var(--ink);
+}
+.keys button:hover{background:var(--accent-wash);border-color:var(--accent)}
+.keys button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.presets button{
+  font-family:var(--mono);font-size:12px;padding:4px 10px;cursor:pointer;
+  border:1px dashed var(--rule);border-radius:100px;background:transparent;color:var(--ink-soft);
+}
+.presets button:hover{border-style:solid;border-color:var(--accent);color:var(--accent)}
+.verdict{
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 0;
+  font-size:14px;padding:11px 14px;border-radius:8px;background:var(--sunken);
+}
+.verdict.good{background:var(--true-wash);color:var(--true)}
+.verdict.bad{background:var(--false-wash);color:var(--false)}
+.verdict.err{background:var(--note-wash);color:var(--note)}
+.verdict b{font-weight:600}
+.dnf{font-family:var(--mono);font-size:13px;color:var(--ink-soft);margin-top:12px;word-break:break-word;line-height:1.7}
+.dnf b{color:var(--ink);font-family:var(--sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:4px}
+
+/* ---------- gates ---------- */
+.gates{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0}
+.gate{background:var(--surface);border:1px solid var(--rule);border-radius:9px;padding:14px;text-align:center}
+.gate svg{display:block;margin:0 auto 8px;width:100%;height:auto;max-width:120px}
+.gate .gname{font-family:var(--mono);font-size:12.5px;font-weight:600;letter-spacing:.04em}
+.gate .gexp{font-size:12px;color:var(--ink-faint);font-family:var(--mono);margin-top:2px}
+
+/* ---------- kmap ---------- */
+.kwrap{display:flex;flex-wrap:wrap;gap:26px;align-items:flex-start;margin:20px 0}
+table.km{border-collapse:collapse;font-family:var(--mono);font-size:14px;background:var(--surface)}
+table.km th{
+  font-weight:600;font-size:12.5px;color:var(--ink-soft);padding:5px 10px;text-align:center;background:transparent;
+}
+table.km td{
+  width:52px;height:44px;text-align:center;border:1px solid var(--rule);
+  font-weight:600;position:relative;background:var(--surface);
+}
+table.km td.one{color:var(--true)}
+table.km td.zero{color:var(--ink-faint);font-weight:400}
+td.g1{box-shadow:inset 0 0 0 3px var(--accent)}
+td.g2{box-shadow:inset 0 0 0 3px var(--true)}
+td.g3{box-shadow:inset 0 0 0 3px var(--false)}
+td.g1.g2{box-shadow:inset 0 0 0 3px var(--accent), inset 0 0 0 6px var(--true)}
+.klegend{font-size:13.5px;display:flex;flex-direction:column;gap:9px;min-width:190px}
+.klegend div{display:flex;gap:9px;align-items:center;font-family:var(--mono);font-size:13px}
+.swatch{width:15px;height:15px;border-radius:3px;flex:none;border:3px solid}
+.sw1{border-color:var(--accent)}
+.sw2{border-color:var(--true)}
+.sw3{border-color:var(--false)}
+
+/* ---------- quiz ---------- */
+.quizbar{
+  position:sticky;top:0;z-index:5;background:var(--surface);border:1px solid var(--rule);
+  border-radius:10px;padding:13px 18px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  justify-content:space-between;margin:0 0 26px;box-shadow:var(--shadow);
+}
+.score{display:flex;align-items:baseline;gap:9px}
+.score .big{font-family:var(--mono);font-size:22px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.score .lbl{font-size:13px;color:var(--ink-soft)}
+.bar{height:5px;background:var(--sunken);border-radius:3px;overflow:hidden;flex:1;min-width:100px;max-width:220px}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .35s ease}
+.resetbtn{font-family:var(--sans);font-size:13px;border:1px solid var(--rule);background:transparent;color:var(--ink-soft);border-radius:6px;padding:6px 12px;cursor:pointer}
+.resetbtn:hover{background:var(--sunken);color:var(--ink)}
+
+.q{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px 20px;margin-bottom:16px}
+.qtop{display:flex;gap:10px;align-items:baseline;margin-bottom:12px}
+.qnum{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink-faint);letter-spacing:.06em;flex:none}
+.qtag{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-wash);padding:2px 7px;border-radius:4px;margin-left:auto;flex:none}
+.qtext{font-size:15.5px;margin:0;max-width:62ch}
+.opts{display:flex;flex-direction:column;gap:7px;margin-top:14px}
+.opts button{
+  text-align:left;font-family:var(--sans);font-size:14.5px;color:var(--ink);
+  background:var(--ground);border:1px solid var(--rule);border-radius:7px;
+  padding:9px 13px;cursor:pointer;display:flex;gap:10px;align-items:baseline;transition:border-color .13s,background .13s;
+}
+.opts button .ol{font-family:var(--mono);font-size:12px;color:var(--ink-faint);font-weight:600;flex:none}
+.opts button:hover:not(:disabled){border-color:var(--accent);background:var(--accent-wash)}
+.opts button:disabled{cursor:default}
+.opts button.right{border-color:var(--true);background:var(--true-wash)}
+.opts button.right .ol{color:var(--true)}
+.opts button.wrong{border-color:var(--false);background:var(--false-wash)}
+.opts button.wrong .ol{color:var(--false)}
+.opts button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.fb{margin-top:13px;font-size:14px;padding:11px 14px;border-radius:7px;line-height:1.6}
+.fb.ok{background:var(--true-wash);color:var(--true)}
+.fb.no{background:var(--false-wash);color:var(--false)}
+.fb b{font-weight:600}
+.fb .why{display:block;margin-top:5px;color:var(--ink-soft)}
+
+.endcard{background:var(--accent-wash);border-radius:10px;padding:22px;margin-top:26px;display:none}
+.endcard.show{display:block}
+.endcard h4{margin-top:0;font-family:var(--serif);font-size:18px;font-weight:600}
+.endcard p{margin-bottom:0;color:var(--ink-soft);font-size:14.5px}
+
+/* ---------- responsive ---------- */
+@media (max-width:940px){
+  .shell{grid-template-columns:1fr}
+  .rail{position:static;height:auto;border-right:none;border-bottom:1px solid var(--rule);padding:20px 22px}
+  .railfoot{margin-top:14px}
+  nav ol{flex-direction:row;flex-wrap:wrap;gap:5px}
+  nav a{grid-template-columns:auto auto;border:1px solid var(--rule);padding:6px 11px;font-size:13.5px}
+  .wrap{padding:0 22px}
+  .masthead{padding:36px 0 30px;margin-bottom:38px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+html{scroll-behavior:smooth}
+</style>
+
+<div class="shell">
+<aside class="rail">
+  <div class="brand">
+    <span class="code">MATH6025016</span>
+    <span class="name">Logika Pernyataan Majemuk</span>
+    <span class="sub">Matematika Diskrit · Bab 2</span>
+  </div>
+
+  <nav aria-label="Daftar modul">
+    <p class="navsec">Alur belajar</p>
+    <ol>
+      <li><a href="https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json#m1" class="on"><span class="n">01</span><span>Bentuk &amp; Ekuivalensi Logika</span></a></li>
+      <li><a href="https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json#m2"><span class="n">02</span><span>Pernyataan Kondisional</span></a></li>
+      <li><a href="https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json#m3"><span class="n">03</span><span>Argumen Valid</span></a></li>
+      <li><a href="https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json#m4"><span class="n">04</span><span>Rangkaian Logika Digital</span></a></li>
+      <li><a href="https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json#m5"><span class="n">05</span><span>Peta Karnaugh</span></a></li>
+      <li><a href="https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json#m6"><span class="n">06</span><span>Latihan Soal</span></a></li>
+    </ol>
+  </nav>
+
+  <div class="railfoot">
+    <button class="tglbtn" id="themeBtn" type="button">Ganti tema terang / gelap</button>
+    <p class="src">Disusun dari slide kuliah Siti Komsiyah, S.Si., M.Si., yang mengadaptasi Epp (2020) Bab 2 dan Rosen (2019).</p>
+  </div>
+</aside>
+
+<main>
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Bab 2 · The Logic of Compound Statements</p>
+    <h1>Logika Pernyataan Majemuk</h1>
+    <p class="lede">Dari kalimat sehari-hari menjadi simbol, dari simbol menjadi tabel kebenaran, dan dari tabel kebenaran menjadi rangkaian elektronik yang benar-benar bisa dibangun. Enam modul, dengan laboratorium tabel kebenaran dan 23 soal latihan berpembahasan.</p>
+    <div class="mastmeta">
+      <span class="chip">∼ ∧ ∨ → ↔</span>
+      <span class="chip">5 topik + latihan</span>
+      <span class="chip">Lab interaktif</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- =================== MODUL 1 =================== -->
+<section class="module" id="m1">
+  <div class="modhead"><span class="modnum">MODUL 01</span><h2>Bentuk Logika &amp; Ekuivalensi Logika</h2></div>
+  <p class="modintro">Ide dasar seluruh bab ini: <em>kebenaran sebuah kalimat majemuk hanya bergantung pada bentuknya, bukan pada isinya</em>. Begitu kita bisa menuliskan bentuk itu dengan simbol, kebenarannya bisa dihitung secara mekanis lewat tabel kebenaran.</p>
+
+  <h3>Pernyataan dan bentuk logika</h3>
+  <p>Sebuah <strong>pernyataan</strong> (<span class="term">statement / proposisi</span>) adalah kalimat yang bernilai benar saja atau salah saja — tidak keduanya. "Jakarta ibu kota Indonesia" adalah pernyataan. "Tutup pintunya!" bukan.</p>
+  <p>Perhatikan dua argumen ini:</p>
+  <div class="box ex">
+    <span class="boxlabel">Bentuk yang sama, isi berbeda</span>
+    <p><em>Jika kucing adalah mamalia maka kucing menyusui. Kucing adalah mamalia. Jadi kucing menyusui.</em></p>
+    <p style="margin-bottom:0"><em>Jika 12 habis dibagi 4 maka 12 genap. 12 habis dibagi 4. Jadi 12 genap.</em></p>
+  </div>
+  <p>Isinya sama sekali berbeda, tapi keduanya benar karena alasan yang persis sama. Kalau kita ganti setiap pernyataan dengan variabel, keduanya menjadi satu <strong>bentuk logika</strong> yang identik: <span class="s">p → q</span>, <span class="s">p</span>, maka <span class="s">q</span>. Inilah yang kita pelajari.</p>
+
+  <h3>Tiga penghubung dasar</h3>
+  <p>Nilai kebenaran didefinisikan lewat tabel. Hafalkan tiga tabel ini — semua sisanya diturunkan dari sini.</p>
+
+  <h4>Negasi — <span class="s">∼p</span> ("bukan p")</h4>
+  <p>Membalik nilai kebenaran. Kalau <span class="s">p</span> benar maka <span class="s">∼p</span> salah, dan sebaliknya.</p>
+  <div class="scroller"><table class="tt"><thead><tr><th>p</th><th class="sep">∼p</th></tr></thead><tbody>
+    <tr><td class="cell-t">B</td><td class="sep cell-f">S</td></tr>
+    <tr><td class="cell-f">S</td><td class="sep cell-t">B</td></tr>
+  </tbody></table></div>
+
+  <h4>Konjungsi — <span class="s">p ∧ q</span> ("p dan q")</h4>
+  <p>Benar <strong>hanya jika keduanya benar</strong>. Satu saja salah, hasilnya salah.</p>
+  <div class="scroller"><table class="tt"><thead><tr><th>p</th><th>q</th><th class="sep">p ∧ q</th></tr></thead><tbody>
+    <tr><td class="cell-t">B</td><td class="cell-t">B</td><td class="sep cell-t">B</td></tr>
+    <tr><td class="cell-t">B</td><td class="cell-f">S</td><td class="sep cell-f">S</td></tr>
+    <tr><td class="cell-f">S</td><td class="cell-t">B</td><td class="sep cell-f">S</td></tr>
+    <tr><td class="cell-f">S</td><td class="cell-f">S</td><td class="sep cell-f">S</td></tr>
+  </tbody></table></div>
+
+  <h4>Disjungsi — <span class="s">p ∨ q</span> ("p atau q")</h4>
+  <p>Salah <strong>hanya jika keduanya salah</strong>. Ini "atau" yang <em>inklusif</em>: kalau dua-duanya benar, hasilnya tetap benar.</p>
+  <div class="scroller"><table class="tt"><thead><tr><th>p</th><th>q</th><th class="sep">p ∨ q</th></tr></thead><tbody>
+    <tr><td class="cell-t">B</td><td class="cell-t">B</td><td class="sep cell-t">B</td></tr>
+    <tr><td class="cell-t">B</td><td class="cell-f">S</td><td class="sep cell-t">B</td></tr>
+    <tr><td class="cell-f">S</td><td class="cell-t">B</td><td class="sep cell-t">B</td></tr>
+    <tr><td class="cell-f">S</td><td class="cell-f">S</td><td class="sep cell-f">S</td></tr>
+  </tbody></table></div>
+
+  <div class="box warn">
+    <span class="boxlabel">Sering tertukar</span>
+    <p style="margin-bottom:0">Dalam bahasa sehari-hari "atau" sering berarti <em>salah satu, tidak keduanya</em> ("Kamu boleh ambil kopi atau teh"). Dalam logika, <span class="s">∨</span> selalu inklusif. Versi eksklusifnya punya simbol sendiri: <span class="s">p ⊕ q</span> (XOR), yang benar hanya kalau nilai <span class="s">p</span> dan <span class="s">q</span> <em>berbeda</em>.</p>
+  </div>
+
+  <h4>Urutan pengerjaan</h4>
+  <p>Seperti perkalian sebelum penjumlahan, operator logika juga punya urutan: <span class="s">∼</span> dikerjakan lebih dulu, baru <span class="s">∧</span> dan <span class="s">∨</span>. Jadi <span class="s">∼p ∧ q</span> berarti <span class="s">(∼p) ∧ q</span>, bukan <span class="s">∼(p ∧ q)</span>. Karena <span class="s">∧</span> dan <span class="s">∨</span> dianggap setara kuatnya, campuran keduanya <strong>wajib diberi kurung</strong>: <span class="s">p ∧ q ∨ r</span> itu ambigu dan tidak sah.</p>
+
+  <h3>Tautologi dan kontradiksi</h3>
+  <div class="box def">
+    <span class="boxlabel">Definisi</span>
+    <p>Sebuah bentuk pernyataan adalah <strong>tautologi</strong> (<span class="s">t</span>) jika bernilai benar untuk <em>semua</em> kemungkinan nilai variabelnya, dan <strong>kontradiksi</strong> (<span class="s">c</span>) jika bernilai salah untuk semua kemungkinan.</p>
+    <p style="margin-bottom:0"><span class="s">p ∨ ∼p</span> selalu benar → tautologi. <span class="s">p ∧ ∼p</span> selalu salah → kontradiksi. Yang tidak keduanya disebut <em>kontingensi</em>.</p>
+  </div>
+
+  <h3>Ekuivalensi logika</h3>
+  <div class="box def">
+    <span class="boxlabel">Definisi</span>
+    <p style="margin-bottom:0">Dua bentuk pernyataan <strong>ekuivalen secara logika</strong>, ditulis <span class="s">P ≡ Q</span>, jika keduanya punya nilai kebenaran yang sama pada <em>setiap baris</em> tabel kebenaran. Cara membuktikannya: buat satu tabel yang memuat kedua kolom, lalu bandingkan baris per baris.</p>
+  </div>
+  <p>Contoh paling terkenal adalah <strong>Hukum De Morgan</strong>, yaitu aturan untuk menegasikan "dan" / "atau":</p>
+  <div class="box">
+    <span class="boxlabel">Hukum De Morgan</span>
+    <p style="text-align:center;font-family:var(--mono);font-size:15px;margin-bottom:6px">∼(p ∧ q) ≡ ∼p ∨ ∼q</p>
+    <p style="text-align:center;font-family:var(--mono);font-size:15px;margin-bottom:12px">∼(p ∨ q) ≡ ∼p ∧ ∼q</p>
+    <p style="margin-bottom:0;font-size:14.5px;color:var(--ink-soft)">Aturan praktisnya: <strong>negasi masuk, penghubung berbalik.</strong> "dan" menjadi "atau", "atau" menjadi "dan".</p>
+  </div>
+  <p>Buktinya lewat tabel — perhatikan dua kolom terakhir identik:</p>
+  <div class="scroller"><table class="tt"><thead><tr><th>p</th><th>q</th><th class="sep">p ∧ q</th><th>∼(p ∧ q)</th><th class="sep">∼p</th><th>∼q</th><th>∼p ∨ ∼q</th></tr></thead><tbody>
+    <tr><td>B</td><td>B</td><td class="sep">B</td><td class="cell-f">S</td><td class="sep">S</td><td>S</td><td class="cell-f">S</td></tr>
+    <tr><td>B</td><td>S</td><td class="sep">S</td><td class="cell-t">B</td><td class="sep">S</td><td>B</td><td class="cell-t">B</td></tr>
+    <tr><td>S</td><td>B</td><td class="sep">S</td><td class="cell-t">B</td><td class="sep">B</td><td>S</td><td class="cell-t">B</td></tr>
+    <tr><td>S</td><td>S</td><td class="sep">S</td><td class="cell-t">B</td><td class="sep">B</td><td>B</td><td class="cell-t">B</td></tr>
+  </tbody></table></div>
+  <div class="box ex">
+    <span class="boxlabel">Penerapan dalam kalimat</span>
+    <p style="margin-bottom:0">Negasi dari <em>"Nilai x lebih besar dari 2 <strong>dan</strong> kurang dari 5"</em> bukan "x tidak lebih besar dari 2 dan tidak kurang dari 5", melainkan <em>"x tidak lebih besar dari 2 <strong>atau</strong> x tidak kurang dari 5"</em> — yaitu <span class="s">x ≤ 2</span> atau <span class="s">x ≥ 5</span>.</p>
+  </div>
+
+  <h4>Membuktikan dua bentuk <em>tidak</em> ekuivalen</h4>
+  <p>Untuk ekuivalen, semua baris harus cocok. Untuk <em>tidak</em> ekuivalen, cukup temukan <strong>satu baris</strong> yang berbeda. Misalnya <span class="s">∼(p ∧ q)</span> dan <span class="s">∼p ∧ ∼q</span>: pada baris <span class="s">p = B, q = S</span>, yang pertama bernilai B tapi yang kedua bernilai S. Satu baris itu sudah cukup sebagai bukti.</p>
+
+  <h3>Sebelas hukum ekuivalensi (Teorema 2.1.1)</h3>
+  <p>Ini "rumus dasar" aljabar logika. Menghafalnya membuat penyederhanaan jauh lebih cepat daripada membuat tabel 8 baris setiap kali.</p>
+  <div class="scroller"><table class="plain"><thead><tr><th style="width:34%">Nama hukum</th><th>Bentuk 1</th><th>Bentuk 2</th></tr></thead><tbody>
+    <tr><td>1. Komutatif</td><td class="m">p ∧ q ≡ q ∧ p</td><td class="m">p ∨ q ≡ q ∨ p</td></tr>
+    <tr><td>2. Asosiatif</td><td class="m">(p ∧ q) ∧ r ≡ p ∧ (q ∧ r)</td><td class="m">(p ∨ q) ∨ r ≡ p ∨ (q ∨ r)</td></tr>
+    <tr><td>3. Distributif</td><td class="m">p ∧ (q ∨ r) ≡ (p∧q) ∨ (p∧r)</td><td class="m">p ∨ (q ∧ r) ≡ (p∨q) ∧ (p∨r)</td></tr>
+    <tr><td>4. Identitas</td><td class="m">p ∧ t ≡ p</td><td class="m">p ∨ c ≡ p</td></tr>
+    <tr><td>5. Negasi</td><td class="m">p ∨ ∼p ≡ t</td><td class="m">p ∧ ∼p ≡ c</td></tr>
+    <tr><td>6. Negasi ganda</td><td class="m">∼(∼p) ≡ p</td><td class="m">—</td></tr>
+    <tr><td>7. Idempoten</td><td class="m">p ∧ p ≡ p</td><td class="m">p ∨ p ≡ p</td></tr>
+    <tr><td>8. Batas universal</td><td class="m">p ∨ t ≡ t</td><td class="m">p ∧ c ≡ c</td></tr>
+    <tr><td>9. De Morgan</td><td class="m">∼(p ∧ q) ≡ ∼p ∨ ∼q</td><td class="m">∼(p ∨ q) ≡ ∼p ∧ ∼q</td></tr>
+    <tr><td>10. Absorpsi</td><td class="m">p ∨ (p ∧ q) ≡ p</td><td class="m">p ∧ (p ∨ q) ≡ p</td></tr>
+    <tr><td>11. Negasi t dan c</td><td class="m">∼t ≡ c</td><td class="m">∼c ≡ t</td></tr>
+  </tbody></table></div>
+
+  <h3>Contoh: menyederhanakan bentuk pernyataan</h3>
+  <div class="box ex">
+    <span class="boxlabel">Soal</span>
+    <p style="margin-bottom:0">Buktikan <span class="s">∼(∼p ∧ q) ∧ (p ∨ q) ≡ p</span> menggunakan Teorema 2.1.1.</p>
+  </div>
+  <ol class="steps">
+    <li><div><span class="s">∼(∼p ∧ q) ∧ (p ∨ q)</span><br><span style="color:var(--ink-soft);font-size:14px">bentuk awal</span></div></li>
+    <li><div><span class="s">≡ (∼(∼p) ∨ ∼q) ∧ (p ∨ q)</span><br><span style="color:var(--ink-soft);font-size:14px">De Morgan pada kurung pertama</span></div></li>
+    <li><div><span class="s">≡ (p ∨ ∼q) ∧ (p ∨ q)</span><br><span style="color:var(--ink-soft);font-size:14px">hukum negasi ganda</span></div></li>
+    <li><div><span class="s">≡ p ∨ (∼q ∧ q)</span><br><span style="color:var(--ink-soft);font-size:14px">distributif, arah sebaliknya — <span class="s">p</span> difaktorkan keluar</span></div></li>
+    <li><div><span class="s">≡ p ∨ c</span><br><span style="color:var(--ink-soft);font-size:14px">hukum negasi: <span class="s">∼q ∧ q ≡ c</span></span></div></li>
+    <li><div><span class="s">≡ p</span><br><span style="color:var(--ink-soft);font-size:14px">hukum identitas. Terbukti.</span></div></li>
+  </ol>
+
+  <!-- ===== LAB ===== -->
+  <div class="lab" id="lab">
+    <h4>Lab Tabel Kebenaran</h4>
+    <p style="font-size:14.5px;color:var(--ink-soft)">Ketik sebuah bentuk pernyataan, atau dua sekaligus untuk mengecek ekuivalensinya. Tabel dibuat lengkap dengan kolom-kolom antara, persis seperti mengerjakannya di kertas.</p>
+    <div class="labrow">
+      <label for="exprA">Ekspresi A</label>
+      <input id="exprA" type="text" spellcheck="false" value="∼(p ∧ q)" aria-label="Ekspresi A">
+    </div>
+    <div class="labrow">
+      <label for="exprB">Ekspresi B — opsional, untuk uji ekuivalensi</label>
+      <input id="exprB" type="text" spellcheck="false" value="∼p ∨ ∼q" aria-label="Ekspresi B">
+    </div>
+    <div class="keys" id="keys" aria-label="Papan simbol"><button type="button" aria-label="Sisipkan ∼">∼</button><button type="button" aria-label="Sisipkan ∧">∧</button><button type="button" aria-label="Sisipkan ∨">∨</button><button type="button" aria-label="Sisipkan →">→</button><button type="button" aria-label="Sisipkan ↔">↔</button><button type="button" aria-label="Sisipkan ⊕">⊕</button><button type="button" aria-label="Sisipkan (">(</button><button type="button" aria-label="Sisipkan )">)</button><button type="button" aria-label="Sisipkan p">p</button><button type="button" aria-label="Sisipkan q">q</button><button type="button" aria-label="Sisipkan r">r</button></div>
+    <div class="presets" id="presets"><button type="button">De Morgan</button><button type="button">Implikasi</button><button type="button">Kontraposisi</button><button type="button">Konvers (tidak ekuivalen)</button><button type="button">Negasi implikasi</button><button type="button">Bikondisional</button><button type="button">Absorpsi</button><button type="button">Penyederhanaan slide</button><button type="button">XOR = rangkaian</button><button type="button">Tautologi</button><button type="button">Distributif 3 variabel</button></div>
+    <div id="verdict" class="verdict good"><b>Ekuivalen secara logika.</b> Kedua kolom identik pada seluruh 4 baris, jadi A ≡ B.</div>
+    <div class="scroller" id="ttOut"><table class="tt"><thead><tr><th>p</th><th>q</th><th class="sep">A: ∼(p ∧ q)</th><th>B: ∼p ∨ ∼q</th></tr></thead><tbody><tr><td>B</td><td>B</td><td class="sep cell-f">S</td><td class=" cell-f">S</td></tr><tr><td>B</td><td>S</td><td class="sep cell-t">B</td><td class=" cell-t">B</td></tr><tr><td>S</td><td>B</td><td class="sep cell-t">B</td><td class=" cell-t">B</td></tr><tr><td>S</td><td>S</td><td class="sep cell-t">B</td><td class=" cell-t">B</td></tr></tbody></table></div>
+    <div class="dnf" id="dnfOut"><b>Bentuk normal disjungtif dari A</b>(p ∧ ∼q) ∨ (∼p ∧ q) ∨ (∼p ∧ ∼q)</div>
+  </div>
+  <p style="font-size:14px;color:var(--ink-faint)">Cara menulis: <span class="s">~</span> atau <span class="s">!</span> untuk negasi, <span class="s">^</span> atau <span class="s">&amp;</span> untuk dan, <span class="s">v</span> atau <span class="s">|</span> untuk atau, <span class="s">-&gt;</span> untuk implikasi, <span class="s">&lt;-&gt;</span> untuk bikondisional. Variabel: huruf kecil apa saja kecuali <span class="s">v</span>, maksimal 4 variabel.</p>
+</section>
+
+<!-- =================== MODUL 2 =================== -->
+<section class="module" id="m2">
+  <div class="modhead"><span class="modnum">MODUL 02</span><h2>Pernyataan Kondisional</h2></div>
+  <p class="modintro">Implikasi "jika … maka …" adalah penghubung yang paling sering salah dipahami, sekaligus yang paling penting: hampir semua teorema matematika berbentuk implikasi.</p>
+
+  <h3>Definisi implikasi</h3>
+  <div class="box def">
+    <span class="boxlabel">Definisi</span>
+    <p><span class="s">p → q</span> dibaca "jika p maka q". Di sini <span class="s">p</span> disebut <strong>hipotesis</strong> (atau <em>antecedent</em>) dan <span class="s">q</span> disebut <strong>konklusi</strong> (atau <em>consequent</em>).</p>
+    <p style="margin-bottom:0"><span class="s">p → q</span> bernilai <strong>salah hanya pada satu kasus</strong>: ketika hipotesisnya benar tetapi konklusinya salah. Pada semua kasus lain, ia benar.</p>
+  </div>
+  <div class="scroller"><table class="tt"><thead><tr><th>p</th><th>q</th><th class="sep">p → q</th></tr></thead><tbody>
+    <tr><td>B</td><td>B</td><td class="sep cell-t">B</td></tr>
+    <tr><td>B</td><td>S</td><td class="sep cell-f">S</td></tr>
+    <tr><td>S</td><td>B</td><td class="sep cell-t">B</td></tr>
+    <tr><td>S</td><td>S</td><td class="sep cell-t">B</td></tr>
+  </tbody></table></div>
+  <p>Anggap implikasi sebagai sebuah <strong>janji</strong>. "Kalau kamu lulus, saya traktir." Janji itu baru dilanggar kalau kamu lulus <em>tetapi</em> tidak ditraktir. Kalau kamu tidak lulus, janji itu tidak dilanggar apa pun yang terjadi — jadi tetap dianggap benar.</p>
+
+  <div class="box warn">
+    <span class="boxlabel">Vacuously true — benar secara hampa</span>
+    <p>Dua baris terakhir tabel sering terasa aneh: kalau hipotesisnya salah, seluruh implikasi otomatis benar, tanpa peduli konklusinya. Ini disebut <strong>benar secara hampa</strong> (<em>vacuously true</em>).</p>
+    <p style="margin-bottom:0">Contoh: <em>"Jika kamu datang kerja Senin pagi, kamu dapat pekerjaannya"</em> secara logika bernilai benar bagi siapa pun yang tidak datang Senin pagi. Begitu juga <em>"Jika 1 = 2 maka saya raja Inggris"</em> — bernilai <strong>benar</strong>.</p>
+  </div>
+
+  <h3>Dua ekuivalensi yang wajib hafal</h3>
+  <div class="box">
+    <span class="boxlabel">Implikasi sebagai disjungsi</span>
+    <p style="text-align:center;font-family:var(--mono);font-size:16px;margin-bottom:8px">p → q ≡ ∼p ∨ q</p>
+    <p style="margin-bottom:0;font-size:14.5px;color:var(--ink-soft)">"Jika hujan maka jalan basah" sama artinya dengan "tidak hujan, atau jalan basah". Ini alasan implikasi bisa dibangun dari gerbang NOT dan OR saja.</p>
+  </div>
+  <div class="box">
+    <span class="boxlabel">Negasi implikasi</span>
+    <p style="text-align:center;font-family:var(--mono);font-size:16px;margin-bottom:8px">∼(p → q) ≡ p ∧ ∼q</p>
+    <p style="margin-bottom:0;font-size:14.5px;color:var(--ink-soft)">Perhatikan: negasi sebuah implikasi <strong>bukan</strong> implikasi lagi, melainkan konjungsi. Masuk akal — satu-satunya cara membantah janji adalah menunjukkan hipotesisnya terjadi tapi konklusinya tidak.</p>
+  </div>
+  <div class="box ex">
+    <span class="boxlabel">Contoh</span>
+    <p><strong>a.</strong> "Jika mobil saya di bengkel, maka saya tidak bisa ke kelas."<br>
+    Negasinya: <em>"Mobil saya di bengkel <strong>dan</strong> saya bisa ke kelas."</em></p>
+    <p style="margin-bottom:0"><strong>b.</strong> "Jika Sara tinggal di Athena, maka ia tinggal di Yunani."<br>
+    Negasinya: <em>"Sara tinggal di Athena <strong>dan</strong> ia tidak tinggal di Yunani."</em> (Bisa jadi ia tinggal di Athena, Ohio.)</p>
+  </div>
+
+  <h3>Kontraposisi, konvers, dan invers</h3>
+  <p>Dari satu implikasi <span class="s">p → q</span> bisa dibentuk tiga variasi. Hanya satu yang ekuivalen dengannya — dan membedakan ketiganya adalah salah satu sumber kesalahan terbesar dalam pembuktian.</p>
+  <div class="scroller"><table class="plain"><thead><tr><th style="width:24%">Nama</th><th style="width:24%">Bentuk</th><th>Hubungan dengan <span class="s">p → q</span></th></tr></thead><tbody>
+    <tr><td><strong>Kontraposisi</strong></td><td class="m">∼q → ∼p</td><td><span style="color:var(--true);font-weight:600">Ekuivalen.</span> Selalu sama nilainya. Inilah dasar pembuktian kontraposisi.</td></tr>
+    <tr><td><strong>Konvers</strong></td><td class="m">q → p</td><td><span style="color:var(--false);font-weight:600">Tidak ekuivalen.</span> Mengira konvers otomatis benar disebut <em>converse error</em>.</td></tr>
+    <tr><td><strong>Invers</strong></td><td class="m">∼p → ∼q</td><td><span style="color:var(--false);font-weight:600">Tidak ekuivalen.</span> Tapi invers ekuivalen dengan konvers.</td></tr>
+  </tbody></table></div>
+  <div class="box ex">
+    <span class="boxlabel">Contoh — "Jika hari ini Paskah, maka besok hari Senin"</span>
+    <p><strong>Kontraposisi:</strong> Jika besok bukan hari Senin, maka hari ini bukan Paskah. <span style="color:var(--true)">(ikut benar)</span></p>
+    <p><strong>Konvers:</strong> Jika besok hari Senin, maka hari ini Paskah. <span style="color:var(--false)">(jelas salah — setiap Minggu besoknya Senin)</span></p>
+    <p style="margin-bottom:0"><strong>Invers:</strong> Jika hari ini bukan Paskah, maka besok bukan hari Senin. <span style="color:var(--false)">(salah, alasan yang sama)</span></p>
+  </div>
+  <p>Uji sendiri di <a href="https://14c7efc6-6786-4738-92d2-7ab7a967d3c4.frame.claudeusercontent.com/_f/1788923834-4271/?__frame_v=manifest.79a7d0a76e4f2644.json#lab">Lab Tabel Kebenaran</a>: masukkan <span class="s">p -&gt; q</span> pada kolom A dan <span class="s">~q -&gt; ~p</span> pada kolom B untuk melihat keduanya identik, lalu ganti B dengan <span class="s">q -&gt; p</span> untuk melihat baris mana yang membedakannya.</p>
+
+  <h3>Bikondisional</h3>
+  <div class="box def">
+    <span class="boxlabel">Definisi</span>
+    <p><span class="s">p ↔ q</span> dibaca "p jika dan hanya jika q". Bernilai benar tepat ketika <span class="s">p</span> dan <span class="s">q</span> punya <strong>nilai kebenaran yang sama</strong>.</p>
+    <p style="margin-bottom:0;font-family:var(--mono);text-align:center;font-size:15px">p ↔ q ≡ (p → q) ∧ (q → p)</p>
+  </div>
+  <div class="scroller"><table class="tt"><thead><tr><th>p</th><th>q</th><th class="sep">p ↔ q</th></tr></thead><tbody>
+    <tr><td>B</td><td>B</td><td class="sep cell-t">B</td></tr>
+    <tr><td>B</td><td>S</td><td class="sep cell-f">S</td></tr>
+    <tr><td>S</td><td>B</td><td class="sep cell-f">S</td></tr>
+    <tr><td>S</td><td>S</td><td class="sep cell-t">B</td></tr>
+  </tbody></table></div>
+  <div class="box ex">
+    <span class="boxlabel">Contoh</span>
+    <p>Tulis ulang sebagai konjungsi dua implikasi: <em>"Program ini benar jika dan hanya jika ia menghasilkan jawaban yang benar untuk semua kemungkinan data masukan."</em></p>
+    <p style="margin-bottom:0"><strong>Jawab:</strong> "Jika program ini benar, maka ia menghasilkan jawaban benar untuk semua data masukan; <em>dan</em> jika program ini menghasilkan jawaban benar untuk semua data masukan, maka ia benar."</p>
+  </div>
+
+  <h4>Urutan pengerjaan lengkap</h4>
+  <p>Dari yang paling kuat ke paling lemah: <span class="s">∼</span> &nbsp;→&nbsp; <span class="s">∧ , ∨</span> &nbsp;→&nbsp; <span class="s">→ , ↔</span>. Artinya <span class="s">p ∧ q → r</span> berarti <span class="s">(p ∧ q) → r</span>, dan <span class="s">∼p → q ∨ r</span> berarti <span class="s">(∼p) → (q ∨ r)</span>.</p>
+
+  <h3>Syarat perlu dan syarat cukup</h3>
+  <div class="box def">
+    <span class="boxlabel">Definisi</span>
+    <p>"<span class="s">r</span> adalah <strong>syarat cukup</strong> untuk <span class="s">s</span>" berarti <span class="s">r → s</span>. Cukup terjadi <span class="s">r</span>, maka <span class="s">s</span> pasti terjadi.</p>
+    <p style="margin-bottom:0">"<span class="s">r</span> adalah <strong>syarat perlu</strong> untuk <span class="s">s</span>" berarti <span class="s">s → r</span> — atau setara, <span class="s">∼r → ∼s</span>. Tanpa <span class="s">r</span>, <span class="s">s</span> mustahil terjadi.</p>
+  </div>
+  <div class="box ex">
+    <span class="boxlabel">Contoh — syarat cukup</span>
+    <p style="margin-bottom:0"><em>"Lahir di tanah AS adalah syarat cukup bagi Pia untuk menjadi warga negara AS."</em><br>→ Jika Pia lahir di tanah AS, maka ia warga negara AS.</p>
+  </div>
+  <div class="box ex">
+    <span class="boxlabel">Contoh — syarat perlu</span>
+    <p><em>"Berusia 35 tahun adalah syarat perlu bagi George untuk menjadi presiden AS."</em></p>
+    <p style="margin-bottom:0"><strong>Versi 1:</strong> Jika George belum berusia 35 tahun, maka ia tidak bisa menjadi presiden AS.<br><strong>Versi 2:</strong> Jika George bisa menjadi presiden AS, maka ia sudah berusia 35 tahun.</p>
+  </div>
+  <div class="box warn">
+    <span class="boxlabel">Kata kunci yang membalik arah</span>
+    <p style="margin-bottom:0">"<span class="s">p</span> <strong>hanya jika</strong> <span class="s">q</span>" berarti <span class="s">p → q</span>, <em>bukan</em> <span class="s">q → p</span>. Kata "hanya" menandakan <span class="s">q</span> adalah syarat perlu. Bandingkan dengan "<span class="s">p</span> <strong>jika</strong> <span class="s">q</span>", yang berarti <span class="s">q → p</span>.</p>
+  </div>
+</section>
+
+<!-- =================== MODUL 3 =================== -->
+<section class="module" id="m3">
+  <div class="modhead"><span class="modnum">MODUL 03</span><h2>Argumen Valid &amp; Tidak Valid</h2></div>
+  <p class="modintro">Sebuah argumen bisa punya premis yang salah tapi tetap <em>valid</em>, dan bisa punya kesimpulan yang benar tapi tetap <em>tidak valid</em>. Validitas menyangkut bentuk, bukan kebenaran isi.</p>
+
+  <h3>Apa itu argumen</h3>
+  <div class="box def">
+    <span class="boxlabel">Definisi</span>
+    <p>Sebuah <strong>argumen</strong> adalah barisan pernyataan. Semua pernyataan kecuali yang terakhir disebut <strong>premis</strong>; yang terakhir disebut <strong>konklusi</strong> (ditandai <span class="s">∴</span>, dibaca "jadi").</p>
+    <p style="margin-bottom:0">Argumen itu <strong>valid</strong> jika: setiap kali semua premisnya benar, konklusinya <em>pasti</em> ikut benar. Perhatikan — ini sama sekali tidak menuntut premisnya memang benar di dunia nyata.</p>
+  </div>
+
+  <h3>Metode baris kritis</h3>
+  <p>Cara mekanis menguji validitas sebuah bentuk argumen:</p>
+  <ol class="steps">
+    <li><div>Identifikasi mana premis dan mana konklusi.</div></li>
+    <li><div>Buat tabel kebenaran yang memuat kolom untuk semua premis dan kolom untuk konklusi.</div></li>
+    <li><div>Tandai <strong>baris kritis</strong> — yaitu baris di mana <em>semua</em> premis bernilai benar.</div></li>
+    <li><div>Periksa konklusi pada baris-baris kritis itu. Kalau semuanya benar → <strong>valid</strong>. Kalau ada <em>satu saja</em> yang salah → <strong>tidak valid</strong>.</div></li>
+  </ol>
+
+  <h4>Contoh bentuk yang <span style="color:var(--false)">tidak valid</span></h4>
+  <p>Uji argumen: &nbsp;<span class="s">p → q ∨ ∼r</span>, &nbsp;<span class="s">q → p ∧ r</span>, &nbsp;<span class="s">∴ p → r</span></p>
+  <div class="scroller"><table class="tt"><thead><tr><th>p</th><th>q</th><th>r</th><th class="sep">q ∨ ∼r</th><th>p → q ∨ ∼r</th><th class="sep">p ∧ r</th><th>q → p ∧ r</th><th class="sep">p → r</th></tr></thead><tbody>
+    <tr class="crit"><td>B</td><td>B</td><td>B</td><td class="sep">B</td><td>B</td><td class="sep">B</td><td>B</td><td class="sep">B</td></tr>
+    <tr><td>B</td><td>B</td><td>S</td><td class="sep">B</td><td>B</td><td class="sep">S</td><td>S</td><td class="sep">S</td></tr>
+    <tr><td>B</td><td>S</td><td>B</td><td class="sep">S</td><td>S</td><td class="sep">B</td><td>B</td><td class="sep">B</td></tr>
+    <tr class="crit"><td>B</td><td>S</td><td>S</td><td class="sep">B</td><td>B</td><td class="sep">S</td><td>B</td><td class="sep cell-f">S</td></tr>
+    <tr><td>S</td><td>B</td><td>B</td><td class="sep">B</td><td>B</td><td class="sep">S</td><td>S</td><td class="sep">B</td></tr>
+    <tr><td>S</td><td>B</td><td>S</td><td class="sep">B</td><td>B</td><td class="sep">S</td><td>S</td><td class="sep">B</td></tr>
+    <tr class="crit"><td>S</td><td>S</td><td>B</td><td class="sep">S</td><td>B</td><td class="sep">S</td><td>B</td><td class="sep">B</td></tr>
+    <tr class="crit"><td>S</td><td>S</td><td>S</td><td class="sep">B</td><td>B</td><td class="sep">S</td><td>B</td><td class="sep">B</td></tr>
+  </tbody></table></div>
+  <p>Baris ke-4 (<span class="s">p = B, q = S, r = S</span>) adalah baris kritis: kedua premis bernilai benar, tetapi konklusi <span class="s">p → r</span> bernilai <span style="color:var(--false);font-weight:600">salah</span>. Satu baris ini membuktikan bentuk argumen tersebut <strong>tidak valid</strong>.</p>
+
+  <div class="box warn">
+    <span class="boxlabel">Dua kekeliruan klasik</span>
+    <p><strong>Converse error</strong> — <span class="s">p → q</span>, &nbsp;<span class="s">q</span>, &nbsp;<span class="s">∴ p</span>. "Jika hujan maka jalan basah. Jalan basah. Jadi hujan." Padahal bisa saja ada truk penyiram.</p>
+    <p style="margin-bottom:0"><strong>Inverse error</strong> — <span class="s">p → q</span>, &nbsp;<span class="s">∼p</span>, &nbsp;<span class="s">∴ ∼q</span>. "Jika hujan maka jalan basah. Tidak hujan. Jadi jalan tidak basah." Kekeliruan yang sama dari sisi lain.</p>
+  </div>
+
+  <h3>Aturan inferensi (Tabel 2.3.1)</h3>
+  <p>Bentuk-bentuk argumen yang sudah terbukti valid. Dalam pembuktian, kamu boleh langsung memakainya tanpa membuat tabel lagi.</p>
+  <div class="scroller"><table class="plain"><thead><tr><th style="width:27%">Nama</th><th style="width:31%">Bentuk</th><th>Cara membacanya</th></tr></thead><tbody>
+    <tr><td><strong>Modus Ponens</strong></td><td class="m">p → q ; p &nbsp;∴ q</td><td>Jika p maka q; p terjadi; jadi q terjadi.</td></tr>
+    <tr><td><strong>Modus Tollens</strong></td><td class="m">p → q ; ∼q &nbsp;∴ ∼p</td><td>Jika p maka q; q tidak terjadi; jadi p tidak terjadi.</td></tr>
+    <tr><td><strong>Generalisasi</strong></td><td class="m">p &nbsp;∴ p ∨ q</td><td>Kalau p benar, "p atau apa pun" pasti benar.</td></tr>
+    <tr><td><strong>Spesialisasi</strong></td><td class="m">p ∧ q &nbsp;∴ p</td><td>Kalau keduanya benar, salah satunya tentu benar.</td></tr>
+    <tr><td><strong>Konjungsi</strong></td><td class="m">p ; q &nbsp;∴ p ∧ q</td><td>Dua fakta terpisah boleh digabung.</td></tr>
+    <tr><td><strong>Eliminasi</strong></td><td class="m">p ∨ q ; ∼q &nbsp;∴ p</td><td>Salah satu benar; yang satu gugur; jadi sisanya benar.</td></tr>
+    <tr><td><strong>Transitivitas</strong></td><td class="m">p → q ; q → r &nbsp;∴ p → r</td><td>Rantai implikasi boleh disambung.</td></tr>
+    <tr><td><strong>Pembagian kasus</strong></td><td class="m">p ∨ q ; p → r ; q → r &nbsp;∴ r</td><td>Kedua kemungkinan bermuara ke hasil sama.</td></tr>
+    <tr><td><strong>Aturan kontradiksi</strong></td><td class="m">∼p → c &nbsp;∴ p</td><td>Jika mengandaikan p salah menimbulkan kontradiksi, maka p benar. Dasar bukti tak langsung.</td></tr>
+  </tbody></table></div>
+
+  <h3>Deduksi berantai: di mana kacamata saya?</h3>
+  <div class="box ex">
+    <span class="boxlabel">Soal</span>
+    <p>Pagi ini kamu hendak berangkat kuliah dan sadar kacamatamu hilang. Kelima pernyataan berikut benar:</p>
+    <ol style="margin-bottom:0">
+      <li>Jika saya membaca koran di dapur, maka kacamata saya di meja dapur.</li>
+      <li>Jika kacamata saya di meja dapur, maka saya melihatnya saat sarapan.</li>
+      <li>Saya <em>tidak</em> melihat kacamata saat sarapan.</li>
+      <li>Saya membaca koran di ruang tamu <em>atau</em> saya membaca koran di dapur.</li>
+      <li>Jika saya membaca koran di ruang tamu, maka kacamata saya di meja kopi.</li>
+    </ol>
+  </div>
+  <p>Beri nama tiap pernyataan sederhana:</p>
+  <ul>
+    <li><span class="s">RK</span> = saya membaca koran di dapur &nbsp;·&nbsp; <span class="s">GK</span> = kacamata di meja dapur</li>
+    <li><span class="s">SB</span> = saya melihat kacamata saat sarapan &nbsp;·&nbsp; <span class="s">RL</span> = saya membaca koran di ruang tamu</li>
+    <li><span class="s">GC</span> = kacamata di meja kopi</li>
+  </ul>
+  <ol class="steps">
+    <li><div><span class="s">RK → GK</span> (a) dan <span class="s">GK → SB</span> (b) &nbsp;∴&nbsp; <span class="s">RK → SB</span><br><span style="color:var(--ink-soft);font-size:14px">transitivitas</span></div></li>
+    <li><div><span class="s">RK → SB</span> dan <span class="s">∼SB</span> (c) &nbsp;∴&nbsp; <span class="s">∼RK</span><br><span style="color:var(--ink-soft);font-size:14px">modus tollens — berarti saya tidak membaca di dapur</span></div></li>
+    <li><div><span class="s">RL ∨ RK</span> (d) dan <span class="s">∼RK</span> &nbsp;∴&nbsp; <span class="s">RL</span><br><span style="color:var(--ink-soft);font-size:14px">eliminasi — berarti saya membaca di ruang tamu</span></div></li>
+    <li><div><span class="s">RL → GC</span> (e) dan <span class="s">RL</span> &nbsp;∴&nbsp; <span class="s">GC</span><br><span style="color:var(--ink-soft);font-size:14px">modus ponens</span></div></li>
+  </ol>
+  <p><strong>Kesimpulan: kacamata ada di meja kopi.</strong> Perhatikan bahwa tidak satu pun langkah memerlukan tabel kebenaran — empat aturan inferensi sudah cukup.</p>
+</section>
+
+<!-- =================== MODUL 4 =================== -->
+<section class="module" id="m4">
+  <div class="modhead"><span class="modnum">MODUL 04</span><h2>Rangkaian Logika Digital</h2></div>
+  <p class="modintro">Di sinilah logika berhenti menjadi abstraksi. Setiap penghubung logika punya padanan fisik berupa gerbang, dan setiap tabel kebenaran bisa diterjemahkan menjadi rangkaian nyata di dalam prosesor.</p>
+
+  <h3>Dari saklar ke sinyal</h3>
+  <p>Bayangkan saklar sederhana: saat tertutup arus mengalir, saat terbuka tidak. Lampu menyala jika dan hanya jika arus mengalir. Dua saklar yang dipasang <strong>seri</strong> berperilaku seperti <span class="s">∧</span> (lampu menyala hanya kalau keduanya tertutup); dua saklar <strong>paralel</strong> berperilaku seperti <span class="s">∨</span>.</p>
+  <p>Dalam rangkaian digital, "tertutup / benar" ditulis <strong>1</strong> dan "terbuka / salah" ditulis <strong>0</strong>. Perilaku sebuah rangkaian dijelaskan lengkap oleh <strong>tabel input/output</strong>-nya — ini tabel kebenaran yang berganti kostum.</p>
+
+  <h3>Gerbang logika</h3>
+  <div class="gates">
+    <div class="gate">
+      <svg viewBox="0 0 120 60" role="img" aria-label="Gerbang NOT">
+        <line x1="4" y1="30" x2="34" y2="30" stroke="currentColor" stroke-width="2" fill="none"></line>
+        <path d="M34 12 L34 48 L72 30 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+        <circle cx="78" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <line x1="84" y1="30" x2="116" y2="30" stroke="currentColor" stroke-width="2" fill="none"></line>
+      </svg>
+      <div class="gname">NOT</div><div class="gexp">∼P</div>
+    </div>
+    <div class="gate">
+      <svg viewBox="0 0 120 60" role="img" aria-label="Gerbang AND">
+        <line x1="4" y1="18" x2="36" y2="18" stroke="currentColor" stroke-width="2"></line>
+        <line x1="4" y1="42" x2="36" y2="42" stroke="currentColor" stroke-width="2"></line>
+        <path d="M36 8 L62 8 A22 22 0 0 1 62 52 L36 52 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+        <line x1="84" y1="30" x2="116" y2="30" stroke="currentColor" stroke-width="2"></line>
+      </svg>
+      <div class="gname">AND</div><div class="gexp">P ∧ Q</div>
+    </div>
+    <div class="gate">
+      <svg viewBox="0 0 120 60" role="img" aria-label="Gerbang OR">
+        <line x1="4" y1="18" x2="34" y2="18" stroke="currentColor" stroke-width="2"></line>
+        <line x1="4" y1="42" x2="34" y2="42" stroke="currentColor" stroke-width="2"></line>
+        <path d="M30 8 Q48 30 30 52 Q62 52 84 30 Q62 8 30 8 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+        <line x1="84" y1="30" x2="116" y2="30" stroke="currentColor" stroke-width="2"></line>
+      </svg>
+      <div class="gname">OR</div><div class="gexp">P ∨ Q</div>
+    </div>
+    <div class="gate">
+      <svg viewBox="0 0 120 60" role="img" aria-label="Gerbang NAND">
+        <line x1="4" y1="18" x2="30" y2="18" stroke="currentColor" stroke-width="2"></line>
+        <line x1="4" y1="42" x2="30" y2="42" stroke="currentColor" stroke-width="2"></line>
+        <path d="M30 8 L56 8 A22 22 0 0 1 56 52 L30 52 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+        <circle cx="84" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <line x1="90" y1="30" x2="116" y2="30" stroke="currentColor" stroke-width="2"></line>
+      </svg>
+      <div class="gname">NAND</div><div class="gexp">∼(P ∧ Q)</div>
+    </div>
+    <div class="gate">
+      <svg viewBox="0 0 120 60" role="img" aria-label="Gerbang NOR">
+        <line x1="4" y1="18" x2="28" y2="18" stroke="currentColor" stroke-width="2"></line>
+        <line x1="4" y1="42" x2="28" y2="42" stroke="currentColor" stroke-width="2"></line>
+        <path d="M24 8 Q42 30 24 52 Q56 52 78 30 Q56 8 24 8 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+        <circle cx="84" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <line x1="90" y1="30" x2="116" y2="30" stroke="currentColor" stroke-width="2"></line>
+      </svg>
+      <div class="gname">NOR</div><div class="gexp">∼(P ∨ Q)</div>
+    </div>
+  </div>
+  <div class="scroller"><table class="tt"><thead><tr><th>P</th><th>Q</th><th class="sep">AND</th><th>OR</th><th class="sep">NAND</th><th>NOR</th></tr></thead><tbody>
+    <tr><td>1</td><td>1</td><td class="sep cell-t">1</td><td class="cell-t">1</td><td class="sep cell-f">0</td><td class="cell-f">0</td></tr>
+    <tr><td>1</td><td>0</td><td class="sep cell-f">0</td><td class="cell-t">1</td><td class="sep cell-t">1</td><td class="cell-f">0</td></tr>
+    <tr><td>0</td><td>1</td><td class="sep cell-f">0</td><td class="cell-t">1</td><td class="sep cell-t">1</td><td class="cell-f">0</td></tr>
+    <tr><td>0</td><td>0</td><td class="sep cell-f">0</td><td class="cell-f">0</td><td class="sep cell-t">1</td><td class="cell-t">1</td></tr>
+  </tbody></table></div>
+  <p style="font-size:14.5px;color:var(--ink-soft)">NAND dan NOR disebut <em>gerbang universal</em>: setiap rangkaian logika apa pun bisa dibangun hanya dari salah satu jenis gerbang ini saja.</p>
+
+  <h3>Dari rangkaian ke ekspresi Boolean</h3>
+  <p>Telusuri rangkaian dari input ke output, tuliskan ekspresi di setiap kabel. Rangkaian dengan dua input <span class="s">P, Q</span> yang menggabungkan sebuah OR, sebuah AND yang di-NOT, lalu keduanya di-AND, menghasilkan:</p>
+  <div class="box">
+    <p style="text-align:center;font-family:var(--mono);font-size:16px;margin-bottom:8px">(P ∨ Q) ∧ ∼(P ∧ Q)</p>
+    <p style="margin-bottom:0;font-size:14.5px;color:var(--ink-soft)">Ini persis definisi <strong>exclusive or</strong>: "P atau Q, tapi tidak keduanya". Bandingkan tabelnya dengan <span class="s">P ⊕ Q</span> di Lab — keduanya identik.</p>
+  </div>
+
+  <h3>Dari tabel input/output ke rangkaian</h3>
+  <p>Ini arah yang paling berguna dalam praktik: seorang perancang tahu <em>perilaku</em> yang diinginkan, dan harus membangun rangkaiannya. Metodenya disebut <strong>bentuk normal disjungtif</strong> (<em>disjunctive normal form</em> / <em>sum-of-products</em>):</p>
+  <ol class="steps">
+    <li><div>Tandai setiap baris yang outputnya <strong>1</strong>.</div></li>
+    <li><div>Untuk tiap baris itu, tulis satu <strong>minterm</strong>: konjungsi semua variabel, diberi <span class="s">∼</span> pada variabel yang bernilai 0 di baris tersebut.</div></li>
+    <li><div>Gabungkan semua minterm dengan <span class="s">∨</span>. Susun rangkaiannya: satu AND per minterm, lalu semuanya masuk ke satu OR besar.</div></li>
+  </ol>
+  <div class="box ex">
+    <span class="boxlabel">Contoh</span>
+    <p>Rancang rangkaian untuk tabel berikut:</p>
+    <div class="scroller"><table class="tt"><thead><tr><th>P</th><th>Q</th><th>R</th><th class="sep">Output</th></tr></thead><tbody>
+      <tr class="crit"><td>1</td><td>1</td><td>1</td><td class="sep cell-t">1</td></tr>
+      <tr><td>1</td><td>1</td><td>0</td><td class="sep">0</td></tr>
+      <tr class="crit"><td>1</td><td>0</td><td>1</td><td class="sep cell-t">1</td></tr>
+      <tr class="crit"><td>1</td><td>0</td><td>0</td><td class="sep cell-t">1</td></tr>
+      <tr><td>0</td><td>1</td><td>1</td><td class="sep">0</td></tr>
+      <tr><td>0</td><td>1</td><td>0</td><td class="sep">0</td></tr>
+      <tr><td>0</td><td>0</td><td>1</td><td class="sep">0</td></tr>
+      <tr><td>0</td><td>0</td><td>0</td><td class="sep">0</td></tr>
+    </tbody></table></div>
+    <p>Baris yang bernilai 1 adalah baris 1, 3, dan 4. Minterm-nya:</p>
+    <p style="text-align:center;font-family:var(--mono);font-size:15px">(P ∧ Q ∧ R) ∨ (P ∧ ∼Q ∧ R) ∨ (P ∧ ∼Q ∧ ∼R)</p>
+    <p style="margin-bottom:0">Ekspresi ini <strong>benar</strong>, tapi boros — butuh tiga gerbang AND tiga-input. Modul berikutnya menunjukkan cara memangkasnya menjadi <span class="s">(P ∧ ∼Q) ∨ (P ∧ R)</span>, yang hanya butuh dua gerbang AND dua-input.</p>
+  </div>
+
+  <h3>Recognizer</h3>
+  <p>Rangkaian yang outputnya bernilai 1 untuk <strong>tepat satu</strong> kombinasi input disebut <em>recognizer</em> — ia "mengenali" satu pola bit tertentu. Recognizer adalah satu gerbang AND dengan NOT di setiap input yang seharusnya bernilai 0. Setiap minterm pada langkah di atas sebetulnya adalah sebuah recognizer.</p>
+</section>
+
+<!-- =================== MODUL 5 =================== -->
+<section class="module" id="m5">
+  <div class="modhead"><span class="modnum">MODUL 05</span><h2>Peta Karnaugh</h2></div>
+  <p class="modintro">Menyederhanakan ekspresi Boolean dengan hukum aljabar itu mungkin, tapi mudah tersesat. Peta Karnaugh (K-map), diperkenalkan Maurice Karnaugh pada 1953, mengubah penyederhanaan menjadi soal <em>melihat pola pada gambar</em>.</p>
+
+  <h3>Ide dasarnya</h3>
+  <p>Dua minterm yang hanya berbeda pada <strong>satu literal</strong> selalu bisa digabung, karena satu variabel jadi tidak berpengaruh:</p>
+  <p style="text-align:center;font-family:var(--mono);font-size:15px">xy + xȳ ≡ x ∧ (y ∨ ȳ) ≡ x ∧ t ≡ x</p>
+  <p>K-map menyusun sel-selnya sedemikian rupa sehingga <strong>sel yang bertetangga secara fisik pasti berbeda tepat satu literal</strong>. Jadi menggabungkan suku cukup dilakukan dengan melingkari kotak yang bersebelahan.</p>
+
+  <h3>K-map dua variabel</h3>
+  <p>Empat sel untuk empat minterm. Baris menyatakan <span class="s">x</span> / <span class="s">x̄</span>, kolom menyatakan <span class="s">y</span> / <span class="s">ȳ</span>.</p>
+  <div class="kwrap">
+    <div>
+      <table class="km"><thead><tr><th></th><th>y</th><th>ȳ</th></tr></thead><tbody>
+        <tr><th>x</th><td class="one g1">1</td><td class="zero">0</td></tr>
+        <tr><th>x̄</th><td class="one g1">1</td><td class="zero">0</td></tr>
+      </tbody></table>
+    </div>
+    <div class="klegend">
+      <p style="font-size:14px;margin-bottom:8px">Ekspresi: <span class="s">xy + x̄y</span></p>
+      <div><span class="swatch sw1"></span><span>blok 2 sel → <b>y</b></span></div>
+      <p style="font-size:14px;color:var(--ink-soft);margin:6px 0 0">Karena blok mencakup baris <span class="s">x</span> dan <span class="s">x̄</span>, variabel <span class="s">x</span> hilang. Sisanya <span class="s">y</span>.</p>
+    </div>
+  </div>
+
+  <h3>K-map tiga variabel</h3>
+  <p>Delapan sel: 2 baris × 4 kolom. Urutan kolomnya <strong>bukan</strong> urutan biner biasa, melainkan <span class="s">yz, yz̄, ȳz̄, ȳz</span> — disusun agar setiap kolom bersebelahan hanya berbeda satu literal (kode Gray). Konsekuensinya, <strong>kolom paling kiri dan paling kanan juga bertetangga</strong>: petanya "melingkar".</p>
+
+  <div class="box ex">
+    <span class="boxlabel">Contoh lengkap</span>
+    <p>Sederhanakan: <span class="s">xyz̄ + xȳz̄ + x̄yz + x̄ȳz̄</span></p>
+    <div class="kwrap">
+      <div>
+        <table class="km"><thead><tr><th></th><th>yz</th><th>yz̄</th><th>ȳz̄</th><th>ȳz</th></tr></thead><tbody>
+          <tr><th>x</th><td class="zero">0</td><td class="one g1">1</td><td class="one g1 g2">1</td><td class="zero">0</td></tr>
+          <tr><th>x̄</th><td class="one g3">1</td><td class="zero">0</td><td class="one g2">1</td><td class="zero">0</td></tr>
+        </tbody></table>
+      </div>
+      <div class="klegend">
+        <div><span class="swatch sw1"></span><span>baris x, 2 sel → <b>xz̄</b></span></div>
+        <div><span class="swatch sw2"></span><span>kolom ȳz̄, 2 sel → <b>ȳz̄</b></span></div>
+        <div><span class="swatch sw3"></span><span>sel tunggal → <b>x̄yz</b></span></div>
+      </div>
+    </div>
+    <p style="margin-bottom:0">Hasil: <span class="s" style="font-size:15px">xz̄ + ȳz̄ + x̄yz</span> — dari 4 suku tiga-literal menjadi 2 suku dua-literal dan 1 suku tiga-literal.</p>
+  </div>
+
+  <h4>Aturan melingkari blok</h4>
+  <ul>
+    <li>Ukuran blok harus berupa pangkat dua: <strong>1, 2, 4, atau 8</strong> sel. Tidak boleh 3 atau 6.</li>
+    <li>Blok <strong>2 sel</strong> menghilangkan 1 variabel; blok <strong>4 sel</strong> menghilangkan 2 variabel; blok <strong>8 sel</strong> menghilangkan 3.</li>
+    <li>Buat blok <strong>sebesar mungkin</strong>, dan gunakan <strong>sesedikit mungkin</strong> blok untuk menutupi semua angka 1.</li>
+    <li>Blok <strong>boleh bertumpang tindih</strong> — sel yang sama boleh ikut dua blok.</li>
+    <li>Tepi peta <strong>menyambung</strong>: kiri–kanan bertetangga, dan pada peta 4 variabel atas–bawah juga bertetangga.</li>
+  </ul>
+
+  <h3>K-map empat variabel</h3>
+  <p>Enam belas sel: 4 baris (<span class="s">wx, wx̄, w̄x̄, w̄x</span>) × 4 kolom (<span class="s">yz, yz̄, ȳz̄, ȳz</span>). Baik baris maupun kolom memakai urutan Gray, sehingga peta menyambung di keempat sisinya — termasuk keempat sudut yang saling bertetangga.</p>
+  <div class="box ex">
+    <span class="boxlabel">Contoh lengkap</span>
+    <p>Sederhanakan ekspresi delapan minterm berikut:</p>
+    <p class="s" style="font-size:14px;white-space:normal;line-height:1.9">w̄x̄ȳz̄ + w̄x̄yz̄ + wx̄ȳz̄ + wx̄yz̄ + w̄xȳz + w̄xyz + wxȳz̄ + wxȳz</p>
+    <div class="kwrap">
+      <div>
+        <table class="km"><thead><tr><th></th><th>yz</th><th>yz̄</th><th>ȳz̄</th><th>ȳz</th></tr></thead><tbody>
+          <tr><th>wx</th><td class="zero">0</td><td class="zero">0</td><td class="one g3">1</td><td class="one g3">1</td></tr>
+          <tr><th>wx̄</th><td class="zero">0</td><td class="one g2">1</td><td class="one g2">1</td><td class="zero">0</td></tr>
+          <tr><th>w̄x̄</th><td class="zero">0</td><td class="one g2">1</td><td class="one g2">1</td><td class="zero">0</td></tr>
+          <tr><th>w̄x</th><td class="one g1">1</td><td class="zero">0</td><td class="zero">0</td><td class="one g1">1</td></tr>
+        </tbody></table>
+      </div>
+      <div class="klegend">
+        <div><span class="swatch sw2"></span><span>blok 4 sel di tengah → <b>x̄z̄</b></span></div>
+        <div><span class="swatch sw1"></span><span>baris w̄x, kiri–kanan menyambung → <b>w̄xz</b></span></div>
+        <div><span class="swatch sw3"></span><span>baris wx, 2 sel → <b>wxȳ</b></span></div>
+      </div>
+    </div>
+    <p style="margin-bottom:0">Hasil minimal: <span class="s" style="font-size:15px">x̄z̄ + w̄xz + wxȳ</span></p>
+  </div>
+  <div class="box warn">
+    <span class="boxlabel">Yang paling sering luput</span>
+    <p style="margin-bottom:0">Blok yang <strong>menyambung lewat tepi</strong>. Pada contoh di atas, kolom <span class="s">yz</span> dan <span class="s">ȳz</span> ada di ujung kiri dan ujung kanan, tapi keduanya sama-sama mengandung <span class="s">z</span> — jadi mereka bertetangga dan boleh digabung. Selalu periksa keempat tepi sebelum menyimpulkan sebuah sel berdiri sendiri.</p>
+  </div>
+</section>
+
+<!-- =================== MODUL 6 =================== -->
+<section class="module" id="m6">
+  <div class="modhead"><span class="modnum">MODUL 06</span><h2>Latihan Soal</h2></div>
+  <p class="modintro">23 soal yang menyapu seluruh bab. Pilih jawaban untuk langsung melihat benar atau salah beserta alasannya — yang penting bukan skornya, tapi membaca pembahasan setiap soal yang keliru.</p>
+
+  <div class="quizbar">
+    <div class="score"><span class="big" id="scoreNum">0/0</span><span class="lbl" id="scoreLbl">belum ada soal dijawab</span></div>
+    <div class="bar" aria-hidden="true"><i id="scoreBar" style="width: 0%;"></i></div>
+    <button class="resetbtn" id="resetQuiz" type="button">Ulangi dari awal</button>
+  </div>
+
+  <div id="quizList"><div class="q"><div class="qtop"><span class="qnum">SOAL 1</span><span class="qtag">Modul 1</span></div><p class="qtext">Jika p bernilai benar dan q bernilai salah, berapa nilai ∼p ∧ q?</p><div class="opts"><button type="button" data-q="0" data-o="0"><span class="ol">A</span><span>Benar</span></button><button type="button" data-q="0" data-o="1"><span class="ol">B</span><span>Salah</span></button><button type="button" data-q="0" data-o="2"><span class="ol">C</span><span>Bisa benar bisa salah</span></button><button type="button" data-q="0" data-o="3"><span class="ol">D</span><span>Tidak terdefinisi</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 2</span><span class="qtag">Modul 1</span></div><p class="qtext">Bentuk mana yang ekuivalen dengan ∼(p ∨ q)?</p><div class="opts"><button type="button" data-q="1" data-o="0"><span class="ol">A</span><span>∼p ∨ ∼q</span></button><button type="button" data-q="1" data-o="1"><span class="ol">B</span><span>∼p ∧ ∼q</span></button><button type="button" data-q="1" data-o="2"><span class="ol">C</span><span>p ∧ ∼q</span></button><button type="button" data-q="1" data-o="3"><span class="ol">D</span><span>∼(p ∧ q)</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 3</span><span class="qtag">Modul 1</span></div><p class="qtext">Apa negasi dari kalimat "Budi rajin dan pandai"?</p><div class="opts"><button type="button" data-q="2" data-o="0"><span class="ol">A</span><span>Budi tidak rajin dan tidak pandai</span></button><button type="button" data-q="2" data-o="1"><span class="ol">B</span><span>Budi tidak rajin atau tidak pandai</span></button><button type="button" data-q="2" data-o="2"><span class="ol">C</span><span>Budi rajin tetapi tidak pandai</span></button><button type="button" data-q="2" data-o="3"><span class="ol">D</span><span>Budi tidak rajin</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 4</span><span class="qtag">Modul 1</span></div><p class="qtext">Bentuk pernyataan yang bernilai salah untuk semua kemungkinan nilai variabelnya disebut…</p><div class="opts"><button type="button" data-q="3" data-o="0"><span class="ol">A</span><span>Tautologi</span></button><button type="button" data-q="3" data-o="1"><span class="ol">B</span><span>Kontingensi</span></button><button type="button" data-q="3" data-o="2"><span class="ol">C</span><span>Kontradiksi</span></button><button type="button" data-q="3" data-o="3"><span class="ol">D</span><span>Bikondisional</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 5</span><span class="qtag">Modul 1</span></div><p class="qtext">Manakah yang merupakan tautologi?</p><div class="opts"><button type="button" data-q="4" data-o="0"><span class="ol">A</span><span>p ∧ ∼p</span></button><button type="button" data-q="4" data-o="1"><span class="ol">B</span><span>p ∨ ∼p</span></button><button type="button" data-q="4" data-o="2"><span class="ol">C</span><span>p → ∼p</span></button><button type="button" data-q="4" data-o="3"><span class="ol">D</span><span>p ↔ ∼p</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 6</span><span class="qtag">Modul 1</span></div><p class="qtext">Menurut hukum absorpsi, p ∨ (p ∧ q) ekuivalen dengan…</p><div class="opts"><button type="button" data-q="5" data-o="0"><span class="ol">A</span><span>p</span></button><button type="button" data-q="5" data-o="1"><span class="ol">B</span><span>q</span></button><button type="button" data-q="5" data-o="2"><span class="ol">C</span><span>p ∧ q</span></button><button type="button" data-q="5" data-o="3"><span class="ol">D</span><span>t</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 7</span><span class="qtag">Modul 1</span></div><p class="qtext">Untuk membuktikan dua bentuk pernyataan TIDAK ekuivalen, minimal yang perlu ditunjukkan adalah…</p><div class="opts"><button type="button" data-q="6" data-o="0"><span class="ol">A</span><span>Seluruh baris tabel berbeda</span></button><button type="button" data-q="6" data-o="1"><span class="ol">B</span><span>Satu baris yang nilainya berbeda</span></button><button type="button" data-q="6" data-o="2"><span class="ol">C</span><span>Setengah baris berbeda</span></button><button type="button" data-q="6" data-o="3"><span class="ol">D</span><span>Keduanya bukan tautologi</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 8</span><span class="qtag">Modul 2</span></div><p class="qtext">p → q ekuivalen dengan…</p><div class="opts"><button type="button" data-q="7" data-o="0"><span class="ol">A</span><span>p ∧ ∼q</span></button><button type="button" data-q="7" data-o="1"><span class="ol">B</span><span>∼p ∨ q</span></button><button type="button" data-q="7" data-o="2"><span class="ol">C</span><span>p ∨ ∼q</span></button><button type="button" data-q="7" data-o="3"><span class="ol">D</span><span>∼p ∧ q</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 9</span><span class="qtag">Modul 2</span></div><p class="qtext">Apa negasi dari p → q?</p><div class="opts"><button type="button" data-q="8" data-o="0"><span class="ol">A</span><span>∼p → ∼q</span></button><button type="button" data-q="8" data-o="1"><span class="ol">B</span><span>q → p</span></button><button type="button" data-q="8" data-o="2"><span class="ol">C</span><span>p ∧ ∼q</span></button><button type="button" data-q="8" data-o="3"><span class="ol">D</span><span>∼p ∨ q</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 10</span><span class="qtag">Modul 2</span></div><p class="qtext">Berapa nilai kebenaran kalimat "Jika 3 adalah bilangan genap, maka 5 lebih besar dari 10"?</p><div class="opts"><button type="button" data-q="9" data-o="0"><span class="ol">A</span><span>Benar</span></button><button type="button" data-q="9" data-o="1"><span class="ol">B</span><span>Salah</span></button><button type="button" data-q="9" data-o="2"><span class="ol">C</span><span>Tidak dapat ditentukan</span></button><button type="button" data-q="9" data-o="3"><span class="ol">D</span><span>Bukan pernyataan</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 11</span><span class="qtag">Modul 2</span></div><p class="qtext">Kontraposisi dari "Jika n habis dibagi 6, maka n habis dibagi 3" adalah…</p><div class="opts"><button type="button" data-q="10" data-o="0"><span class="ol">A</span><span>Jika n habis dibagi 3, maka n habis dibagi 6</span></button><button type="button" data-q="10" data-o="1"><span class="ol">B</span><span>Jika n tidak habis dibagi 6, maka n tidak habis dibagi 3</span></button><button type="button" data-q="10" data-o="2"><span class="ol">C</span><span>Jika n tidak habis dibagi 3, maka n tidak habis dibagi 6</span></button><button type="button" data-q="10" data-o="3"><span class="ol">D</span><span>n habis dibagi 6 dan tidak habis dibagi 3</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 12</span><span class="qtag">Modul 2</span></div><p class="qtext">Kalimat "Saya lulus hanya jika saya belajar" setara dengan…</p><div class="opts"><button type="button" data-q="11" data-o="0"><span class="ol">A</span><span>belajar → lulus</span></button><button type="button" data-q="11" data-o="1"><span class="ol">B</span><span>lulus → belajar</span></button><button type="button" data-q="11" data-o="2"><span class="ol">C</span><span>lulus ↔ belajar</span></button><button type="button" data-q="11" data-o="3"><span class="ol">D</span><span>∼belajar → lulus</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 13</span><span class="qtag">Modul 2</span></div><p class="qtext">p ↔ q bernilai benar tepat ketika…</p><div class="opts"><button type="button" data-q="12" data-o="0"><span class="ol">A</span><span>p dan q dua-duanya benar</span></button><button type="button" data-q="12" data-o="1"><span class="ol">B</span><span>p dan q punya nilai kebenaran yang sama</span></button><button type="button" data-q="12" data-o="2"><span class="ol">C</span><span>Sedikitnya satu di antara p dan q benar</span></button><button type="button" data-q="12" data-o="3"><span class="ol">D</span><span>p benar dan q salah</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 14</span><span class="qtag">Modul 3</span></div><p class="qtext">Bentuk argumen p → q ; ∼q ; ∴ ∼p disebut…</p><div class="opts"><button type="button" data-q="13" data-o="0"><span class="ol">A</span><span>Modus ponens</span></button><button type="button" data-q="13" data-o="1"><span class="ol">B</span><span>Modus tollens</span></button><button type="button" data-q="13" data-o="2"><span class="ol">C</span><span>Eliminasi</span></button><button type="button" data-q="13" data-o="3"><span class="ol">D</span><span>Transitivitas</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 15</span><span class="qtag">Modul 3</span></div><p class="qtext">Bentuk argumen p ∨ q ; ∼p ; ∴ q disebut…</p><div class="opts"><button type="button" data-q="14" data-o="0"><span class="ol">A</span><span>Spesialisasi</span></button><button type="button" data-q="14" data-o="1"><span class="ol">B</span><span>Generalisasi</span></button><button type="button" data-q="14" data-o="2"><span class="ol">C</span><span>Eliminasi</span></button><button type="button" data-q="14" data-o="3"><span class="ol">D</span><span>Konjungsi</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 16</span><span class="qtag">Modul 3</span></div><p class="qtext">Argumen p → q ; q ; ∴ p adalah…</p><div class="opts"><button type="button" data-q="15" data-o="0"><span class="ol">A</span><span>Valid, yaitu modus ponens</span></button><button type="button" data-q="15" data-o="1"><span class="ol">B</span><span>Valid, yaitu modus tollens</span></button><button type="button" data-q="15" data-o="2"><span class="ol">C</span><span>Tidak valid — converse error</span></button><button type="button" data-q="15" data-o="3"><span class="ol">D</span><span>Tidak valid — inverse error</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 17</span><span class="qtag">Modul 3</span></div><p class="qtext">Yang disebut baris kritis (critical row) pada tabel kebenaran sebuah argumen adalah baris di mana…</p><div class="opts"><button type="button" data-q="16" data-o="0"><span class="ol">A</span><span>Konklusinya benar</span></button><button type="button" data-q="16" data-o="1"><span class="ol">B</span><span>Semua premisnya benar</span></button><button type="button" data-q="16" data-o="2"><span class="ol">C</span><span>Semua premisnya salah</span></button><button type="button" data-q="16" data-o="3"><span class="ol">D</span><span>Premis dan konklusi sama-sama benar</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 18</span><span class="qtag">Modul 3</span></div><p class="qtext">Sebuah argumen valid, tetapi salah satu premisnya ternyata salah di dunia nyata. Kesimpulannya…</p><div class="opts"><button type="button" data-q="17" data-o="0"><span class="ol">A</span><span>Pasti benar</span></button><button type="button" data-q="17" data-o="1"><span class="ol">B</span><span>Pasti salah</span></button><button type="button" data-q="17" data-o="2"><span class="ol">C</span><span>Bisa benar bisa salah</span></button><button type="button" data-q="17" data-o="3"><span class="ol">D</span><span>Membuat argumennya jadi tidak valid</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 19</span><span class="qtag">Modul 4</span></div><p class="qtext">Berapa output gerbang NAND ketika kedua inputnya bernilai 1?</p><div class="opts"><button type="button" data-q="18" data-o="0"><span class="ol">A</span><span>1</span></button><button type="button" data-q="18" data-o="1"><span class="ol">B</span><span>0</span></button><button type="button" data-q="18" data-o="2"><span class="ol">C</span><span>Tergantung input ketiga</span></button><button type="button" data-q="18" data-o="3"><span class="ol">D</span><span>Tidak terdefinisi</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 20</span><span class="qtag">Modul 4</span></div><p class="qtext">Ekspresi (P ∨ Q) ∧ ∼(P ∧ Q) menggambarkan operasi…</p><div class="opts"><button type="button" data-q="19" data-o="0"><span class="ol">A</span><span>Konjungsi</span></button><button type="button" data-q="19" data-o="1"><span class="ol">B</span><span>Disjungsi inklusif</span></button><button type="button" data-q="19" data-o="2"><span class="ol">C</span><span>Exclusive or</span></button><button type="button" data-q="19" data-o="3"><span class="ol">D</span><span>Implikasi</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 21</span><span class="qtag">Modul 4</span></div><p class="qtext">Dalam menyusun rangkaian dari tabel input/output dengan bentuk sum-of-products, minterm diambil dari baris yang…</p><div class="opts"><button type="button" data-q="20" data-o="0"><span class="ol">A</span><span>Outputnya 1</span></button><button type="button" data-q="20" data-o="1"><span class="ol">B</span><span>Outputnya 0</span></button><button type="button" data-q="20" data-o="2"><span class="ol">C</span><span>Inputnya semua 1</span></button><button type="button" data-q="20" data-o="3"><span class="ol">D</span><span>Inputnya semua 0</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 22</span><span class="qtag">Modul 5</span></div><p class="qtext">Pada peta Karnaugh, sebuah blok berisi 4 sel akan menghilangkan berapa variabel?</p><div class="opts"><button type="button" data-q="21" data-o="0"><span class="ol">A</span><span>1 variabel</span></button><button type="button" data-q="21" data-o="1"><span class="ol">B</span><span>2 variabel</span></button><button type="button" data-q="21" data-o="2"><span class="ol">C</span><span>3 variabel</span></button><button type="button" data-q="21" data-o="3"><span class="ol">D</span><span>4 variabel</span></button></div><div class="fb" hidden=""></div></div><div class="q"><div class="qtop"><span class="qnum">SOAL 23</span><span class="qtag">Modul 5</span></div><p class="qtext">Dua sel pada K-map disebut bertetangga (adjacent) jika minterm yang diwakilinya berbeda pada…</p><div class="opts"><button type="button" data-q="22" data-o="0"><span class="ol">A</span><span>Tepat satu literal</span></button><button type="button" data-q="22" data-o="1"><span class="ol">B</span><span>Tepat dua literal</span></button><button type="button" data-q="22" data-o="2"><span class="ol">C</span><span>Semua literal</span></button><button type="button" data-q="22" data-o="3"><span class="ol">D</span><span>Jumlah literal yang genap</span></button></div><div class="fb" hidden=""></div></div></div>
+
+  <div class="endcard" id="endCard">
+    <h4 id="endTitle">Selesai</h4>
+    <p id="endText"></p>
+  </div>
+</section>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /shell -->
+
+<script>
+(function(){
+"use strict";
+
+/* ============ tema ============ */
+var root=document.documentElement;
+function getStored(){try{return localStorage.getItem('logika-tema');}catch(e){return null;}}
+function setStored(v){try{localStorage.setItem('logika-tema',v);}catch(e){}}
+var saved=getStored();
+if(saved==='dark'||saved==='light')root.setAttribute('data-theme',saved);
+document.getElementById('themeBtn').addEventListener('click',function(){
+  var cur=root.getAttribute('data-theme');
+  if(!cur){cur=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+  var next=cur==='dark'?'light':'dark';
+  root.setAttribute('data-theme',next);setStored(next);
+});
+
+/* ============ parser logika ============ */
+function tokenize(src){
+  var s=String(src).replace(/<->|<=>/g,'↔').replace(/->|=>/g,'→');
+  var out=[],i,c;
+  for(i=0;i<s.length;i++){
+    c=s[i];
+    if(/\s/.test(c))continue;
+    if('~∼¬!'.indexOf(c)>=0){out.push({t:'not'});continue;}
+    if('∧^&*'.indexOf(c)>=0){out.push({t:'and'});continue;}
+    if('∨|+'.indexOf(c)>=0){out.push({t:'or'});continue;}
+    if(c==='⊕'){out.push({t:'xor'});continue;}
+    if(c==='→'){out.push({t:'imp'});continue;}
+    if(c==='↔'||c==='≡'){out.push({t:'iff'});continue;}
+    if(c==='('){out.push({t:'lp'});continue;}
+    if(c===')'){out.push({t:'rp'});continue;}
+    if(c==='1'||c==='T'){out.push({t:'const',v:true});continue;}
+    if(c==='0'||c==='F'){out.push({t:'const',v:false});continue;}
+    if(c==='v'||c==='V'){out.push({t:'or'});continue;}
+    if(/[a-zA-Z]/.test(c)){out.push({t:'var',name:c.toLowerCase()});continue;}
+    throw new Error('Simbol tidak dikenal: "'+c+'"');
+  }
+  return out;
+}
+function parse(toks){
+  var i=0;
+  function peek(){return toks[i];}
+  function eat(t){if(toks[i]&&toks[i].t===t){return toks[i++];}return null;}
+  function atom(){
+    if(eat('lp')){var e=iff();if(!eat('rp'))throw new Error('Kurung tutup ")" belum ada');return e;}
+    if(eat('not'))return{op:'not',a:atom()};
+    var c=eat('const');if(c)return{op:'const',v:c.v};
+    var v=eat('var');if(v)return{op:'var',name:v.name};
+    throw new Error('Ekspresi belum lengkap — ada operator tanpa pasangan');
+  }
+  function andE(){var l=atom();while(peek()&&peek().t==='and'){i++;l={op:'and',a:l,b:atom()};}return l;}
+  function orE(){var l=andE();while(peek()&&peek().t==='or'){i++;l={op:'or',a:l,b:andE()};}return l;}
+  function xorE(){var l=orE();while(peek()&&peek().t==='xor'){i++;l={op:'xor',a:l,b:orE()};}return l;}
+  function impE(){var l=xorE();if(peek()&&peek().t==='imp'){i++;return{op:'imp',a:l,b:impE()};}return l;}
+  function iff(){var l=impE();while(peek()&&peek().t==='iff'){i++;l={op:'iff',a:l,b:impE()};}return l;}
+  var e=iff();
+  if(i<toks.length)throw new Error('Ada bagian yang tidak terbaca — cek kurungnya');
+  return e;
+}
+function ev(n,env){
+  switch(n.op){
+    case 'var':return env[n.name];
+    case 'const':return n.v;
+    case 'not':return !ev(n.a,env);
+    case 'and':return ev(n.a,env)&&ev(n.b,env);
+    case 'or':return ev(n.a,env)||ev(n.b,env);
+    case 'xor':return ev(n.a,env)!==ev(n.b,env);
+    case 'imp':return !ev(n.a,env)||ev(n.b,env);
+    case 'iff':return ev(n.a,env)===ev(n.b,env);
+  }
+  return false;
+}
+var PREC={const:9,var:9,not:8,and:6,or:5,xor:4,imp:3,iff:2};
+var SYM={and:'∧',or:'∨',xor:'⊕',imp:'→',iff:'↔'};
+function str(n){
+  if(n.op==='var')return n.name;
+  if(n.op==='const')return n.v?'t':'c';
+  if(n.op==='not'){var s=str(n.a);return '∼'+(PREC[n.a.op]<8?'('+s+')':s);}
+  function w(ch){var t=str(ch);return PREC[ch.op]<PREC[n.op]?'('+t+')':t;}
+  return w(n.a)+' '+SYM[n.op]+' '+w(n.b);
+}
+function vars(n,acc){
+  acc=acc||[];
+  if(n.op==='var'){if(acc.indexOf(n.name)<0)acc.push(n.name);return acc;}
+  if(n.a)vars(n.a,acc);
+  if(n.b)vars(n.b,acc);
+  return acc;
+}
+function subs(n,acc,seen){
+  acc=acc||[];seen=seen||{};
+  if(n.op==='var'||n.op==='const')return acc;
+  if(n.a)subs(n.a,acc,seen);
+  if(n.b)subs(n.b,acc,seen);
+  var k=str(n);
+  if(!seen[k]){seen[k]=1;acc.push({label:k,node:n});}
+  return acc;
+}
+var ORDER='pqrstuwxyzabcdefghijklmno';
+function sortVars(vs){
+  return vs.slice().sort(function(a,b){
+    var ia=ORDER.indexOf(a),ib=ORDER.indexOf(b);
+    if(ia<0)ia=99;if(ib<0)ib=99;
+    return ia-ib||(a<b?-1:1);
+  });
+}
+
+/* ============ lab tabel kebenaran ============ */
+var inA=document.getElementById('exprA'),inB=document.getElementById('exprB');
+var outT=document.getElementById('ttOut'),outV=document.getElementById('verdict'),outD=document.getElementById('dnfOut');
+
+var KEYS=['∼','∧','∨','→','↔','⊕','(',')','p','q','r'];
+var keyBox=document.getElementById('keys');
+KEYS.forEach(function(k){
+  var b=document.createElement('button');
+  b.type='button';b.textContent=k;
+  b.setAttribute('aria-label','Sisipkan '+k);
+  b.addEventListener('click',function(){
+    var t=lastFocus||inA;
+    var s=t.selectionStart==null?t.value.length:t.selectionStart;
+    var e=t.selectionEnd==null?s:t.selectionEnd;
+    t.value=t.value.slice(0,s)+k+t.value.slice(e);
+    t.focus();t.selectionStart=t.selectionEnd=s+k.length;
+    run();
+  });
+  keyBox.appendChild(b);
+});
+var lastFocus=inA;
+inA.addEventListener('focus',function(){lastFocus=inA;});
+inB.addEventListener('focus',function(){lastFocus=inB;});
+
+var PRESETS=[
+  ['De Morgan','∼(p ∧ q)','∼p ∨ ∼q'],
+  ['Implikasi','p → q','∼p ∨ q'],
+  ['Kontraposisi','p → q','∼q → ∼p'],
+  ['Konvers (tidak ekuivalen)','p → q','q → p'],
+  ['Negasi implikasi','∼(p → q)','p ∧ ∼q'],
+  ['Bikondisional','p ↔ q','(p → q) ∧ (q → p)'],
+  ['Absorpsi','p ∨ (p ∧ q)','p'],
+  ['Penyederhanaan slide','∼(∼p ∧ q) ∧ (p ∨ q)','p'],
+  ['XOR = rangkaian','p ⊕ q','(p ∨ q) ∧ ∼(p ∧ q)'],
+  ['Tautologi','p ∨ ∼p',''],
+  ['Distributif 3 variabel','p ∧ (q ∨ r)','(p ∧ q) ∨ (p ∧ r)']
+];
+var preBox=document.getElementById('presets');
+PRESETS.forEach(function(pr){
+  var b=document.createElement('button');
+  b.type='button';b.textContent=pr[0];
+  b.addEventListener('click',function(){inA.value=pr[1];inB.value=pr[2];run();});
+  preBox.appendChild(b);
+});
+
+function cellHtml(v,extra){
+  return '<td class="'+(extra||'')+' cell-'+(v?'t':'f')+'">'+(v?'B':'S')+'</td>';
+}
+function run(){
+  var rawA=inA.value.trim(),rawB=inB.value.trim();
+  outT.innerHTML='';outD.innerHTML='';
+  if(!rawA){outV.className='verdict';outV.textContent='Ketik sebuah ekspresi pada kolom A untuk memulai.';return;}
+  var treeA,treeB=null;
+  try{treeA=parse(tokenize(rawA));}
+  catch(err){outV.className='verdict err';outV.innerHTML='<b>Ekspresi A:</b> '+err.message;return;}
+  if(rawB){
+    try{treeB=parse(tokenize(rawB));}
+    catch(err){outV.className='verdict err';outV.innerHTML='<b>Ekspresi B:</b> '+err.message;return;}
+  }
+  var vs=vars(treeA);
+  if(treeB)vars(treeB,vs);
+  vs=sortVars(vs);
+  if(vs.length===0){outV.className='verdict err';outV.textContent='Tidak ada variabel yang bisa dihitung.';return;}
+  if(vs.length>4){outV.className='verdict err';outV.textContent='Maksimal 4 variabel (16 baris). Saat ini ada '+vs.length+'.';return;}
+
+  var n=vs.length,rows=1<<n,i,k;
+  var cols=[];
+  if(treeB){
+    cols=[{label:str(treeA),node:treeA,tag:'A'},{label:str(treeB),node:treeB,tag:'B'}];
+  }else{
+    cols=subs(treeA).map(function(s){return{label:s.label,node:s.node,tag:''};});
+    if(cols.length>8)cols=cols.slice(cols.length-8);
+  }
+
+  var head='<tr>';
+  vs.forEach(function(v){head+='<th>'+v+'</th>';});
+  cols.forEach(function(c,ci){head+='<th'+(ci===0?' class="sep"':'')+'>'+(c.tag?c.tag+': ':'')+c.label+'</th>';});
+  head+='</tr>';
+
+  var body='',trueRows=[],mismatch=null,allT=true,allF=true;
+  for(i=0;i<rows;i++){
+    var env={};
+    for(k=0;k<n;k++){env[vs[k]]=((i>>(n-1-k))&1)===0;}
+    var vals=cols.map(function(c){return ev(c.node,env);});
+    var resA=ev(treeA,env);
+    if(resA)trueRows.push(Object.assign({},env));else allT=false;
+    if(resA)allF=false;
+    var bad=false;
+    if(treeB&&vals[0]!==vals[1]){bad=true;if(!mismatch)mismatch=Object.assign({},env);}
+    body+='<tr'+(bad?' class="crit"':'')+'>';
+    vs.forEach(function(v){body+='<td>'+(env[v]?'B':'S')+'</td>';});
+    vals.forEach(function(val,ci){body+=cellHtml(val,ci===0?'sep':'');});
+    body+='</tr>';
+  }
+  outT.innerHTML='<table class="tt"><thead>'+head+'</thead><tbody>'+body+'</tbody></table>';
+
+  if(treeB){
+    if(!mismatch){
+      outV.className='verdict good';
+      outV.innerHTML='<b>Ekuivalen secara logika.</b> Kedua kolom identik pada seluruh '+rows+' baris, jadi A ≡ B.';
+    }else{
+      var desc=vs.map(function(v){return v+' = '+(mismatch[v]?'B':'S');}).join(', ');
+      outV.className='verdict bad';
+      outV.innerHTML='<b>Tidak ekuivalen.</b> Cukup satu baris pembeda: pada '+desc+' kedua ekspresi berbeda nilai (baris yang disorot).';
+    }
+  }else{
+    if(allT){outV.className='verdict good';outV.innerHTML='<b>Tautologi.</b> Bernilai benar pada semua '+rows+' baris.';}
+    else if(allF){outV.className='verdict bad';outV.innerHTML='<b>Kontradiksi.</b> Bernilai salah pada semua '+rows+' baris.';}
+    else{outV.className='verdict';outV.innerHTML='<b>Kontingensi.</b> Benar pada '+trueRows.length+' dari '+rows+' baris — bukan tautologi, bukan kontradiksi.';}
+  }
+
+  if(trueRows.length>0&&trueRows.length<rows){
+    var terms=trueRows.map(function(env){
+      return '('+vs.map(function(v){return (env[v]?'':'∼')+v;}).join(' ∧ ')+')';
+    });
+    outD.innerHTML='<b>Bentuk normal disjungtif dari A</b>'+terms.join(' ∨ ');
+  }else if(trueRows.length===rows){
+    outD.innerHTML='<b>Bentuk normal disjungtif dari A</b>Setiap baris bernilai benar, jadi ekspresi ini setara dengan tautologi t.';
+  }else{
+    outD.innerHTML='<b>Bentuk normal disjungtif dari A</b>Tidak ada baris bernilai benar, jadi ekspresi ini setara dengan kontradiksi c.';
+  }
+}
+inA.addEventListener('input',run);
+inB.addEventListener('input',run);
+run();
+
+/* ============ kuis ============ */
+var QUIZ=[
+ {m:'Modul 1',q:'Jika p bernilai benar dan q bernilai salah, berapa nilai ∼p ∧ q?',
+  o:['Benar','Salah','Bisa benar bisa salah','Tidak terdefinisi'],a:1,
+  e:'∼ dikerjakan lebih dulu, jadi ∼p ∧ q berarti (∼p) ∧ q. Karena p benar maka ∼p salah, dan konjungsi dengan salah satu operan salah selalu bernilai salah.'},
+ {m:'Modul 1',q:'Bentuk mana yang ekuivalen dengan ∼(p ∨ q)?',
+  o:['∼p ∨ ∼q','∼p ∧ ∼q','p ∧ ∼q','∼(p ∧ q)'],a:1,
+  e:'Hukum De Morgan: negasi masuk, penghubung berbalik. "atau" menjadi "dan", sehingga ∼(p ∨ q) ≡ ∼p ∧ ∼q.'},
+ {m:'Modul 1',q:'Apa negasi dari kalimat "Budi rajin dan pandai"?',
+  o:['Budi tidak rajin dan tidak pandai','Budi tidak rajin atau tidak pandai','Budi rajin tetapi tidak pandai','Budi tidak rajin'],a:1,
+  e:'Bentuknya ∼(p ∧ q), yang menurut De Morgan menjadi ∼p ∨ ∼q. Cukup salah satu sifat yang tidak dimiliki untuk membantah kalimat asli.'},
+ {m:'Modul 1',q:'Bentuk pernyataan yang bernilai salah untuk semua kemungkinan nilai variabelnya disebut…',
+  o:['Tautologi','Kontingensi','Kontradiksi','Bikondisional'],a:2,
+  e:'Selalu salah = kontradiksi (dilambangkan c). Selalu benar = tautologi (t). Yang bukan keduanya = kontingensi.'},
+ {m:'Modul 1',q:'Manakah yang merupakan tautologi?',
+  o:['p ∧ ∼p','p ∨ ∼p','p → ∼p','p ↔ ∼p'],a:1,
+  e:'Hukum negasi: p ∨ ∼p ≡ t. Salah satu dari p dan ∼p pasti benar, jadi disjungsinya selalu benar. Sedangkan p ∧ ∼p justru kontradiksi.'},
+ {m:'Modul 1',q:'Menurut hukum absorpsi, p ∨ (p ∧ q) ekuivalen dengan…',
+  o:['p','q','p ∧ q','t'],a:0,
+  e:'Kalau p benar, seluruh disjungsi langsung benar. Kalau p salah, p ∧ q juga salah sehingga disjungsinya salah. Nilainya selalu mengikuti p, jadi hasilnya p.'},
+ {m:'Modul 1',q:'Untuk membuktikan dua bentuk pernyataan TIDAK ekuivalen, minimal yang perlu ditunjukkan adalah…',
+  o:['Seluruh baris tabel berbeda','Satu baris yang nilainya berbeda','Setengah baris berbeda','Keduanya bukan tautologi'],a:1,
+  e:'Ekuivalensi menuntut kecocokan di semua baris, jadi satu baris pembeda saja sudah cukup untuk meruntuhkannya. Inilah gunanya mencari counterexample.'},
+
+ {m:'Modul 2',q:'p → q ekuivalen dengan…',
+  o:['p ∧ ∼q','∼p ∨ q','p ∨ ∼q','∼p ∧ q'],a:1,
+  e:'Bandingkan tabelnya: keduanya hanya bernilai salah saat p benar dan q salah. Ekuivalensi inilah yang memungkinkan implikasi dibangun dari gerbang NOT dan OR.'},
+ {m:'Modul 2',q:'Apa negasi dari p → q?',
+  o:['∼p → ∼q','q → p','p ∧ ∼q','∼p ∨ q'],a:2,
+  e:'Satu-satunya cara implikasi bernilai salah adalah hipotesis benar sementara konklusi salah. Jadi ∼(p → q) ≡ p ∧ ∼q — hasilnya konjungsi, bukan implikasi lagi.'},
+ {m:'Modul 2',q:'Berapa nilai kebenaran kalimat "Jika 3 adalah bilangan genap, maka 5 lebih besar dari 10"?',
+  o:['Benar','Salah','Tidak dapat ditentukan','Bukan pernyataan'],a:0,
+  e:'Hipotesisnya salah (3 bukan genap), sehingga implikasi bernilai benar secara hampa (vacuously true) tanpa memedulikan konklusinya.'},
+ {m:'Modul 2',q:'Kontraposisi dari "Jika n habis dibagi 6, maka n habis dibagi 3" adalah…',
+  o:['Jika n habis dibagi 3, maka n habis dibagi 6','Jika n tidak habis dibagi 6, maka n tidak habis dibagi 3','Jika n tidak habis dibagi 3, maka n tidak habis dibagi 6','n habis dibagi 6 dan tidak habis dibagi 3'],a:2,
+  e:'Kontraposisi dari p → q adalah ∼q → ∼p: konklusi dan hipotesis ditukar sekaligus dinegasikan. Pilihan pertama adalah konvers, pilihan kedua adalah invers — keduanya tidak ekuivalen.'},
+ {m:'Modul 2',q:'Kalimat "Saya lulus hanya jika saya belajar" setara dengan…',
+  o:['belajar → lulus','lulus → belajar','lulus ↔ belajar','∼belajar → lulus'],a:1,
+  e:'Kata "hanya jika" menandai syarat perlu: belajar adalah syarat yang harus dipenuhi untuk lulus. Jadi lulus → belajar. Bandingkan dengan "saya lulus jika saya belajar", yang berarti belajar → lulus.'},
+ {m:'Modul 2',q:'p ↔ q bernilai benar tepat ketika…',
+  o:['p dan q dua-duanya benar','p dan q punya nilai kebenaran yang sama','Sedikitnya satu di antara p dan q benar','p benar dan q salah'],a:1,
+  e:'Bikondisional benar bila p dan q sama-sama benar ATAU sama-sama salah — yang penting nilainya seragam. Ini setara dengan (p → q) ∧ (q → p).'},
+
+ {m:'Modul 3',q:'Bentuk argumen p → q ; ∼q ; ∴ ∼p disebut…',
+  o:['Modus ponens','Modus tollens','Eliminasi','Transitivitas'],a:1,
+  e:'Modus tollens: karena akibat yang dijanjikan tidak terjadi, sebabnya pun tidak mungkin terjadi. Bandingkan modus ponens yang berbentuk p → q ; p ; ∴ q.'},
+ {m:'Modul 3',q:'Bentuk argumen p ∨ q ; ∼p ; ∴ q disebut…',
+  o:['Spesialisasi','Generalisasi','Eliminasi','Konjungsi'],a:2,
+  e:'Eliminasi: salah satu dari dua kemungkinan pasti benar, dan ketika satu kemungkinan gugur maka sisanya harus benar.'},
+ {m:'Modul 3',q:'Argumen p → q ; q ; ∴ p adalah…',
+  o:['Valid, yaitu modus ponens','Valid, yaitu modus tollens','Tidak valid — converse error','Tidak valid — inverse error'],a:2,
+  e:'Ini kekeliruan konvers: q bisa terjadi karena sebab lain. "Jika hujan maka jalan basah; jalan basah; jadi hujan" gagal saat ada truk penyiram jalan.'},
+ {m:'Modul 3',q:'Yang disebut baris kritis (critical row) pada tabel kebenaran sebuah argumen adalah baris di mana…',
+  o:['Konklusinya benar','Semua premisnya benar','Semua premisnya salah','Premis dan konklusi sama-sama benar'],a:1,
+  e:'Hanya baris dengan seluruh premis benar yang menguji validitas. Kalau di salah satu baris itu konklusinya salah, argumennya tidak valid.'},
+ {m:'Modul 3',q:'Sebuah argumen valid, tetapi salah satu premisnya ternyata salah di dunia nyata. Kesimpulannya…',
+  o:['Pasti benar','Pasti salah','Bisa benar bisa salah','Membuat argumennya jadi tidak valid'],a:2,
+  e:'Validitas hanya menjamin konklusi ketika semua premis benar. Dengan premis yang salah, konklusinya tidak dijamin apa-apa — meski bentuk argumennya tetap valid.'},
+
+ {m:'Modul 4',q:'Berapa output gerbang NAND ketika kedua inputnya bernilai 1?',
+  o:['1','0','Tergantung input ketiga','Tidak terdefinisi'],a:1,
+  e:'NAND adalah AND yang dinegasikan: ∼(P ∧ Q). Ketika kedua input 1, AND menghasilkan 1 lalu dibalik menjadi 0. NAND bernilai 1 pada semua kombinasi lainnya.'},
+ {m:'Modul 4',q:'Ekspresi (P ∨ Q) ∧ ∼(P ∧ Q) menggambarkan operasi…',
+  o:['Konjungsi','Disjungsi inklusif','Exclusive or','Implikasi'],a:2,
+  e:'Dibaca: "P atau Q, tetapi tidak keduanya" — persis definisi XOR. Bernilai 1 hanya ketika kedua input berbeda.'},
+ {m:'Modul 4',q:'Dalam menyusun rangkaian dari tabel input/output dengan bentuk sum-of-products, minterm diambil dari baris yang…',
+  o:['Outputnya 1','Outputnya 0','Inputnya semua 1','Inputnya semua 0'],a:0,
+  e:'Setiap baris yang menghasilkan output 1 diubah menjadi satu minterm (satu gerbang AND), lalu semuanya digabungkan dengan satu gerbang OR.'},
+
+ {m:'Modul 5',q:'Pada peta Karnaugh, sebuah blok berisi 4 sel akan menghilangkan berapa variabel?',
+  o:['1 variabel','2 variabel','3 variabel','4 variabel'],a:1,
+  e:'Blok berukuran 2^k menghilangkan k variabel. Blok 2 sel menghilangkan 1 variabel, blok 4 sel menghilangkan 2, blok 8 sel menghilangkan 3.'},
+ {m:'Modul 5',q:'Dua sel pada K-map disebut bertetangga (adjacent) jika minterm yang diwakilinya berbeda pada…',
+  o:['Tepat satu literal','Tepat dua literal','Semua literal','Jumlah literal yang genap'],a:0,
+  e:'Justru karena bedanya tepat satu literal, kedua suku bisa digabung: xy + xy̅ ≡ x. Urutan kode Gray pada baris dan kolom dipakai agar sel yang berdekatan secara fisik selalu memenuhi syarat ini.'}
+];
+
+var quizList=document.getElementById('quizList');
+var scoreNum=document.getElementById('scoreNum'),scoreLbl=document.getElementById('scoreLbl');
+var scoreBar=document.getElementById('scoreBar'),endCard=document.getElementById('endCard');
+var endTitle=document.getElementById('endTitle'),endText=document.getElementById('endText');
+var LETTERS=['A','B','C','D'];
+var state=[];
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function buildQuiz(){
+  quizList.innerHTML='';
+  state=QUIZ.map(function(){return null;});
+  QUIZ.forEach(function(item,qi){
+    var card=document.createElement('div');
+    card.className='q';
+    var opts='';
+    item.o.forEach(function(txt,oi){
+      opts+='<button type="button" data-q="'+qi+'" data-o="'+oi+'"><span class="ol">'+LETTERS[oi]+'</span><span>'+esc(txt)+'</span></button>';
+    });
+    card.innerHTML=
+      '<div class="qtop"><span class="qnum">SOAL '+(qi+1)+'</span><span class="qtag">'+esc(item.m)+'</span></div>'+
+      '<p class="qtext">'+esc(item.q)+'</p>'+
+      '<div class="opts">'+opts+'</div>'+
+      '<div class="fb" hidden></div>';
+    quizList.appendChild(card);
+  });
+  endCard.className='endcard';
+  updateScore();
+}
+
+quizList.addEventListener('click',function(e){
+  var btn=e.target.closest('button[data-q]');
+  if(!btn)return;
+  var qi=+btn.getAttribute('data-q'),oi=+btn.getAttribute('data-o');
+  if(state[qi]!==null)return;
+  var item=QUIZ[qi];
+  state[qi]=oi;
+  var card=btn.closest('.q');
+  var all=card.querySelectorAll('.opts button');
+  for(var i=0;i<all.length;i++){
+    all[i].disabled=true;
+    var o=+all[i].getAttribute('data-o');
+    if(o===item.a)all[i].className='right';
+    else if(o===oi)all[i].className='wrong';
+  }
+  var fb=card.querySelector('.fb');
+  var ok=oi===item.a;
+  fb.className='fb '+(ok?'ok':'no');
+  fb.innerHTML='<b>'+(ok?'Tepat.':'Belum tepat — jawaban yang benar '+LETTERS[item.a]+'.')+'</b><span class="why">'+esc(item.e)+'</span>';
+  fb.hidden=false;
+  updateScore();
+});
+
+function updateScore(){
+  var answered=0,correct=0;
+  state.forEach(function(v,i){
+    if(v!==null){answered++;if(v===QUIZ[i].a)correct++;}
+  });
+  scoreNum.textContent=correct+'/'+answered;
+  scoreBar.style.width=(answered/QUIZ.length*100)+'%';
+  if(answered===0){scoreLbl.textContent='belum ada soal dijawab';}
+  else{scoreLbl.textContent='benar, dari '+answered+' soal dijawab · sisa '+(QUIZ.length-answered);}
+  if(answered===QUIZ.length){
+    var pct=Math.round(correct/QUIZ.length*100);
+    endCard.className='endcard show';
+    endTitle.textContent='Selesai — '+correct+' dari '+QUIZ.length+' benar ('+pct+'%)';
+    if(pct>=85)endText.textContent='Penguasaan materinya sudah kuat. Yang tersisa tinggal kecepatan: coba kerjakan ulang tanpa membuka tabel, dan latih penyederhanaan K-map 4 variabel karena di sanalah soal ujian biasanya paling memakan waktu.';
+    else if(pct>=60)endText.textContent='Dasarnya sudah masuk. Baca ulang pembahasan soal yang keliru, lalu buka Lab Tabel Kebenaran dan buktikan sendiri setiap ekuivalensi yang tadi salah — membuktikannya sekali jauh lebih melekat daripada menghafalnya.';
+    else endText.textContent='Masih banyak yang perlu diulang, dan itu wajar untuk bab ini. Mulai dari Modul 1 dan 2: begitu tiga tabel dasar dan tabel implikasi benar-benar hafal di luar kepala, modul-modul berikutnya akan terasa jauh lebih ringan.';
+    endCard.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }else{
+    endCard.className='endcard';
+  }
+}
+
+document.getElementById('resetQuiz').addEventListener('click',function(){
+  buildQuiz();
+  document.getElementById('m6').scrollIntoView({behavior:'smooth',block:'start'});
+});
+buildQuiz();
+
+/* ============ navigasi aktif ============ */
+var links={};
+var navA=document.querySelectorAll('nav a');
+for(var li=0;li<navA.length;li++){links[navA[li].getAttribute('href').slice(1)]=navA[li];}
+if('IntersectionObserver' in window){
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        for(var k in links)links[k].classList.remove('on');
+        var a=links[en.target.id];
+        if(a)a.classList.add('on');
+      }
+    });
+  },{rootMargin:'-15% 0px -70% 0px',threshold:0});
+  var secs=document.querySelectorAll('section.module');
+  for(var si=0;si<secs.length;si++)obs.observe(secs[si]);
+}
+})();
+</script>
+
+</body></html>
